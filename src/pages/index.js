@@ -139,8 +139,8 @@ function Home() {
               GitHub
               <SwitchDarkImage
                 className={styles.buttonGitHubImage}
-                defaultSrc="img/GitHub-Mark.png"
-                darkSrc="img/GitHub-Mark-Light.png"
+                defaultSrc="img/github-mark.png"
+                darkSrc="img/github-mark-light.png"
               />
             </Link>
           </div>
