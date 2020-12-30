@@ -101,8 +101,8 @@ function Home() {
 
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={siteConfig.title}
+      description={siteConfig.tagline}>
       <header className={clsx('hero hero--primary-lightest', styles.heroBanner)}>
         <SwitchDarkImage
           className={styles.heroBannerBackground}
@@ -130,6 +130,7 @@ function Home() {
               to={useBaseUrl('docs/')}>
               Get Started
             </Link>
+
             <Link
               className={clsx(
                 'button button--outline button--secondary button--lg',
