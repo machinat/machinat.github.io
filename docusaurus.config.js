@@ -7,7 +7,7 @@ module.exports = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'machinat',
-  projectName: 'machinat',
+  projectName: 'machinat.github.io',
   themeConfig: {
     navbar: {
       logo: {
