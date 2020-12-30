@@ -136,7 +136,12 @@ function Home() {
                 styles.button,
               )}
               to="https://github.com/machinat/machinat">
-              View Source
+              GitHub
+              <SwitchDarkImage
+                className={styles.buttonGitHubImage}
+                defaultSrc="img/GitHub-Mark.png"
+                darkSrc="img/GitHub-Mark-Light.png"
+              />
             </Link>
           </div>
         </div>

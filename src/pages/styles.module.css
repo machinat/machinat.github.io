@@ -70,6 +70,13 @@
 
 .button {
   margin: 0 1em;
+  min-width: 170px;
+}
+
+.buttonGitHubImage {
+  margin: -2px 0 -5px 8px;
+  width: 25px;
+  height: 25px;
 }
 
 .featureContainer {
