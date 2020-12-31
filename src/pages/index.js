@@ -5,7 +5,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import CodeBlock from '@theme/CodeBlock';
-import SwitchDarkImage from '../components/SwitchDarkImage';
+import ThemedImage from '@theme/ThemedImage';
 import NeonWords from '../components/NeonWords';
 import styles from './styles.module.css';
 
@@ -104,23 +104,28 @@ function Home() {
       title={siteConfig.title}
       description={siteConfig.tagline}>
       <header className={clsx('hero hero--primary-lightest', styles.heroBanner)}>
-        <SwitchDarkImage
+        <ThemedImage
           className={styles.heroBannerBackground}
-          defaultSrc="img/hero-background.svg"
-          darkSrc="img/hero-background-dark.svg"
+          sources={{
+            light: 'img/hero-background.svg',
+            dark: 'img/hero-background-dark.svg',
+          }}
         />
 
-        <div className={clsx(styles.heroContentContainer, 'container')}>
-          <SwitchDarkImage
+        <div className={clsx(styles.heroContainer, 'container')}>
+          <ThemedImage
             className={styles.heroLogo}
-            defaultSrc="img/logo.svg"
-            darkSrc="img/logo-dark.svg"
+            sources={{
+              light: 'img/logo.svg',
+              dark: 'img/logo-dark.svg',
+            }}
           />
 
-          <p className={clsx('hero__subtitle', styles.heroSubtitle)}>
+          <div className={clsx('hero__subtitle', styles.heroSubtitle)}>
             <div>Build Next-Gen Chat App</div>{' '}
             <div>on ALL <NeonWords>Conversational Platforms</NeonWords></div>
-          </p>
+          </div>
+
           <div className={styles.buttonsContainer}>
             <Link
               className={clsx(
@@ -130,7 +135,7 @@ function Home() {
               to={useBaseUrl('docs/')}>
               Get Started
             </Link>
-
+            <div className={styles.buttonSpacer} />
             <Link
               className={clsx(
                 'button button--outline button--secondary button--lg',
@@ -138,10 +143,12 @@ function Home() {
               )}
               to="https://github.com/machinat/machinat">
               GitHub
-              <SwitchDarkImage
+              <ThemedImage
                 className={styles.buttonGitHubImage}
-                defaultSrc="img/github-mark.png"
-                darkSrc="img/github-mark-light.png"
+                sources={{
+                  light: 'img/github-mark.png',
+                  dark: 'img/github-mark-light.png',
+                }}
               />
             </Link>
           </div>

@@ -188,7 +188,7 @@
        fx="47.997353"
        fy="149.31693"
        r="42.164196"
-       gradientTransform="matrix(1.0057578,-0.12181062,0.02988179,0.24672595,-2.6770181,4.4569147)"
+       gradientTransform="matrix(1.0057578,-0.12181062,0.02988179,0.24672595,-3.2061848,3.927748)"
        gradientUnits="userSpaceOnUse" />
     <radialGradient
        inkscape:collect="always"
@@ -251,7 +251,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -266,7 +266,7 @@
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:url(#radialGradient975);stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 8.0706855,45.883582 92.335957,25.182482"
+       d="M 7.5415188,45.354415 91.80679,24.653315"
        id="path854"
        sodipodi:nodetypes="cc" />
     <path

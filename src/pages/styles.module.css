@@ -25,39 +25,58 @@
 
 .heroLogo {
   width:380px;
+  max-width: 68%;
 }
 
-.heroContentContainer {
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   transform: translate(-3%, 0);
   z-index: 1;
 }
 
 .heroSubtitle {
-  width: 60%;
-  margin: auto;
   font-weight: lighter;
   font-size: 2.5rem;
 }
 
-@media screen and (max-width: 966px) {
+@media screen and (max-width: 700px) {
   .heroBanner {
     padding: 2rem;
   }
 
   .heroBannerBackground {
-    width: 230%;
-  }
-
-  .heroLogo {
-    width: 60%
+    max-width: 1700px;
+    width: 200%;
   }
 
   .heroSubtitle {
-    width: 100%;
+    width: 80%;
   }
 
   .heroSubtitle div {
     display: inline;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .heroContainer {
+    transform: none;
+  }
+
+  .heroSubtitle {
+    width: 100%;
+    text-align: left;
+    font-size: 3rem;
+  }
+
+  .heroBannerBackground {
+    display: none !important;
+  }
+
+  .heroLogo {
+    display: none !important;
   }
 }
 
@@ -69,12 +88,16 @@
 }
 
 .button {
-  margin: 0 1em;
-  min-width: 170px;
+  display: flex;
+}
+
+.buttonSpacer {
+  width: 2rem;
+  flex-shrink: 6;
 }
 
 .buttonGitHubImage {
-  margin: -2px 0 -5px 8px;
+  margin-left: 8px;
   width: 25px;
   height: 25px;
 }
