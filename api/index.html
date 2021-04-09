@@ -1,0 +1,267 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Machinat</title>
+	<meta name="description" content="Documentation for Machinat">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">Machinat</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>Machinat</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<h1 align="center">
+					<img width="600" src="media/logo.svg" alt="Machinat" />
+					<br/>
+				</h1>
+				<blockquote>
+					<p>Conversational UI Framework for The Future</p>
+				</blockquote>
+				<p>Machinat is a declarative, progressive and cross-platform JavaScript framework for building conversational UI/UX.</p>
+				<a href="#highlights" id="highlights" style="color: inherit; text-decoration: none;">
+					<h2>Highlights</h2>
+				</a>
+				<ul>
+					<li><p>Make one app, serve for all platforms.</p>
+					</li>
+					<li><p>Declarative <em>JSX</em> API to build <em>Conversational UI</em>.</p>
+					</li>
+					<li><p>Render expressive view instead of making many imperative API calls.</p>
+					</li>
+					<li><p>Handle rich text format, in-chat widgets and actions like a pause as parts of UI.</p>
+					</li>
+					<li><p>Support cross-platform API along with complete native features of each platform.</p>
+					</li>
+					<li><p>Render dynamic and modular UI with customizable component.</p>
+					</li>
+					<li><p>Develop interactive Q&amp;A dialog flow in flexible <a href="docs/stage-dialog.md"><em>Script</em></a>.</p>
+					</li>
+					<li><p>Make hybrid experience of CUI and GUI by integrating webview within the chat platform.</p>
+					</li>
+					<li><p>Standard interfaces for external services, include accessing state data and intent recognizing.</p>
+					</li>
+					<li><p>Progressive design that most features and all platforms can be imported when needed.</p>
+					</li>
+					<li><p>Easy to extend through self-defined or 3rd-party event/dispatch middlewares, modules and platforms.</p>
+					</li>
+				</ul>
+				<a href="#documents" id="documents" style="color: inherit; text-decoration: none;">
+					<h2>Documents</h2>
+				</a>
+				<ul>
+					<li><p>Main Concept:</p>
+						<ul>
+							<li><a href="docs/getting-started.md">Getting Started</a></li>
+							<li><a href="docs/receiving-events.md">Receiving Events</a></li>
+							<li><a href="docs/introducing-jsx.md">Introducing JSX</a></li>
+							<li><a href="docs/rendering-elements.md">Rendering Elements</a></li>
+							<li><a href="docs/components-for-cui.md">Components for CUI</a></li>
+						</ul>
+					</li>
+					<li><p>Advanced topic</p>
+						<ul>
+							<li><a href="docs/dependency-injection.md">Dependency Injection</a></li>
+							<li><a href="docs/recognizing-intent.md">Recognizing Intent</a></li>
+							<li><a href="docs/using-states.md">Using States</a></li>
+							<li><a href="docs/staged-dialog.md">Staged Dialog</a></li>
+							<li><a href="docs/integration-with-webview.md">Integration with Webview</a></li>
+							<li><a href="docs/reactive-programming.md">Reactive Programming</a></li>
+						</ul>
+					</li>
+				</ul>
+				<a href="#platforms" id="platforms" style="color: inherit; text-decoration: none;">
+					<h2>Platforms</h2>
+				</a>
+				<p>Platforms are sources where events come from and possibly you can make reactions to. Machinat works like as a hub to communicate to all the channels, including instant messaging, voice assistant, SMS, e-mail, terminal console or any other event-based sources.</p>
+				<p>The following platforms are officially supported for now:</p>
+				<ul>
+					<li>Messenger - <a href="packages/messenger"><code>@machinat/messenger</code></a>, receive/send messages as a Facebook page in <a href="https://www.messenger.com">Messenger</a>.</li>
+					<li>LINE - <a href="packages/line"><code>@machinat/line</code></a>, receive/send messages as a <a href="https://line.me">LINE</a> official account.</li>
+					<li>Next.js - <a href="packages/next"><code>@machinat/next</code></a>, serve your web app with <a href="https://nextjs.org/">Next.js</a>.</li>
+					<li>WebSocket - <a href="packages/websocket"><code>@machinat/websocket</code></a>, connect to the web front-end with <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API">WebSocket</a>.</li>
+				</ul>
+				<a href="#examples" id="examples" style="color: inherit; text-decoration: none;">
+					<h2>Examples</h2>
+				</a>
+				<p>Machinat is flexible to use only the features and platforms you need, check <a href="examples"><code>./examples</code></a> for a most suitable one to start with.</p>
+				<p>A simplest Machinat app looks like:</p>
+				<pre><code class="language-js"><span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #001080">Machinat</span><span style="color: #000000"> </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@machinat/core&#039;</span><span style="color: #000000">;</span>
+<span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #001080">Http</span><span style="color: #000000"> </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@machinat/http&#039;</span><span style="color: #000000">;</span>
+<span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #001080">Messenger</span><span style="color: #000000"> </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@machinat/messenger&#039;</span><span style="color: #000000">;</span>
+
+<span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">Hello</span><span style="color: #000000">({ </span><span style="color: #001080">name</span><span style="color: #000000"> }) {</span>
+<span style="color: #000000">  </span><span style="color: #AF00DB">return</span><span style="color: #000000"> (</span>
+<span style="color: #000000">    </span><span style="color: #800000">&lt;p&gt;</span>
+<span style="color: #000000">      Hello </span><span style="color: #0000FF">{</span><span style="color: #001080">name</span><span style="color: #0000FF">}</span><span style="color: #000000">!</span>
+<span style="color: #000000">      </span><span style="color: #800000">&lt;br</span><span style="color: #000000"> </span><span style="color: #800000">/&gt;</span>
+<span style="color: #000000">      🤗🤗🤗</span>
+<span style="color: #000000">    </span><span style="color: #800000">&lt;/p&gt;</span>
+<span style="color: #000000">  );</span>
+<span style="color: #000000">}</span>
+
+<span style="color: #001080">Machinat</span><span style="color: #000000">.</span><span style="color: #795E26">createApp</span><span style="color: #000000">({</span>
+<span style="color: #000000">  </span><span style="color: #001080">modules:</span><span style="color: #000000"> [</span>
+<span style="color: #000000">    </span><span style="color: #001080">Http</span><span style="color: #000000">.</span><span style="color: #795E26">initModule</span><span style="color: #000000">({ </span><span style="color: #001080">port:</span><span style="color: #000000"> </span><span style="color: #098658">8080</span><span style="color: #000000"> }),</span>
+<span style="color: #000000">  ],</span>
+<span style="color: #000000">  </span><span style="color: #001080">platforms:</span><span style="color: #000000"> [</span>
+<span style="color: #000000">    </span><span style="color: #001080">Messenger</span><span style="color: #000000">.</span><span style="color: #795E26">initModule</span><span style="color: #000000">({ ... }),</span>
+<span style="color: #000000">  ],</span>
+<span style="color: #000000">})</span>
+<span style="color: #000000">  .</span><span style="color: #795E26">onEvent</span><span style="color: #000000">(</span><span style="color: #0000FF">async</span><span style="color: #000000"> ({ </span><span style="color: #001080">bot</span><span style="color: #000000">, </span><span style="color: #001080">event</span><span style="color: #000000"> }) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">bot</span><span style="color: #000000">.</span><span style="color: #795E26">render</span><span style="color: #000000">(</span><span style="color: #001080">event</span><span style="color: #000000">.</span><span style="color: #001080">channel</span><span style="color: #000000">, </span><span style="color: #800000">&lt;</span><span style="color: #267F99">Hello</span><span style="color: #000000"> </span><span style="color: #FF0000">name</span><span style="color: #000000">=</span><span style="color: #A31515">&quot;Jojo&quot;</span><span style="color: #000000"> </span><span style="color: #800000">/&gt;</span><span style="color: #000000">);</span>
+<span style="color: #000000">  })</span>
+<span style="color: #000000">  .</span><span style="color: #795E26">start</span><span style="color: #000000">();</span>
+</code></pre>
+				<p>The code above start a server on port 8080 listening to the webhooks from <em>Messenger</em>. Each time receive an event, it replies to user like this:</p>
+				<p><img src="media/example-message.png" alt="Hello Messages"></p>
+				<p>The HTML like syntax is called JSX, you might have seen it in some fornt-end framework like <a href="https://reactjs.org/docs/introducing-jsx.html">React.js</a> or <a href="https://vuejs.org/v2/guide/render-function.html#JSX">Vue.js</a>. But instead of being rendered into HTML in a web page, it&#39;s rendered into a chatroom or somewhere else the conversation is happening.</p>
+				<a href="#philosophy" id="philosophy" style="color: inherit; text-decoration: none;">
+					<h2>Philosophy</h2>
+				</a>
+				<ul>
+					<li><p><strong>Omni-channel App</strong>: Omni-channel marketing and customer service is the trend nowadays. Therefor it is important for business to have omni-channel applications to touch and serve more customer automatically.</p>
+						<p>Machinat is a framework designed to serve multiple communication platforms with consistent user experiences  at the same time. We focus on the Instant Messaging platforms at first, i.e. for the <em>chatbots</em>, and will then expand to other platforms like SMS, e-mail, voice assistants and social medias later.</p>
+						<p>The goal of Machinat is to enable developers to build one-for-all conversational apps to communicate with users from every platform.</p>
+					</li>
+					<li><p><strong>Declarative</strong>: Like React.js, Machinat JSX API provide a <a href="https://en.wikipedia.org/wiki/Domain-specific_language">DSL</a> that is declarative and flexible to define the presentation logic. The conversational UIs compose a &quot;view&quot; of expression as the way represent in the chatroom.</p>
+						<p>Declarative views make the conversational UI/UX code more expressive, predictable and also more easier to debug.</p>
+					</li>
+					<li><p><strong>Component-Based</strong>: One of the major challenge of building UIs is the nested presentation logic, so does for CUI. For example, how a chatbot greet in many different situations under different conversation contexts?</p>
+						<p>With Machinat all the greeting logic can be encapsulated into a reusable <code>Hello</code> component. Components help to build conversational UI/UX in many aspects, including identical character, composing complex expressions and more skillful talk.</p>
+					</li>
+				</ul>
+				<a href="#compare" id="compare" style="color: inherit; text-decoration: none;">
+					<h2>Compare</h2>
+				</a>
+				<p>WIP</p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Modules</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/auth.html">auth</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/core.html">core</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/dialogflow.html">dialogflow</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/http.html">http</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/line.html">line</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/local_state.html">local-<wbr>state</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/messenger.html">messenger</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/next.html">next</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/redis_state.html">redis-<wbr>state</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/script.html">script</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/stream.html">stream</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/telegram.html">telegram</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/websocket.html">websocket</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/webview.html">webview</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

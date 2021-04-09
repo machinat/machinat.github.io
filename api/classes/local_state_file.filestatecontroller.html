@@ -1,0 +1,403 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>FileStateController | Machinat</title>
+	<meta name="description" content="Documentation for Machinat">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">Machinat</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">Machinat</a>
+				</li>
+				<li>
+					<a href="../modules/local_state_file.html">local-state/file</a>
+				</li>
+				<li>
+					<a href="local_state_file.filestatecontroller.html">FileStateController</a>
+				</li>
+			</ul>
+			<h1>Class FileStateController</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">FileStateController</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../interfaces/core_base_statecontroller.basestatecontroller.html" class="tsd-signature-type" data-tsd-kind="Interface">BaseStateController</a></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="local_state_file.filestatecontroller.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="local_state_file.filestatecontroller.html#marshaler" class="tsd-kind-icon">marshaler</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="local_state_file.filestatecontroller.html#path" class="tsd-kind-icon">path</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="local_state_file.filestatecontroller.html#serializer" class="tsd-kind-icon">serializer</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="local_state_file.filestatecontroller.html#channelstate" class="tsd-kind-icon">channel<wbr>State</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="local_state_file.filestatecontroller.html#globalstate" class="tsd-kind-icon">global<wbr>State</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="local_state_file.filestatecontroller.html#userstate" class="tsd-kind-icon">user<wbr>State</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>File<wbr>State<wbr>Controller<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../modules/local_state_file_types.html#filestateconfigs" class="tsd-signature-type" data-tsd-kind="Type alias">FileStateConfigs</a>, marshaler<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/core_base_marshaler.marshaler.html" class="tsd-signature-type" data-tsd-kind="Interface">Marshaler</a>, serializer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/local_state_file_types.filestateserializer.html" class="tsd-signature-type" data-tsd-kind="Interface">FileStateSerializer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="local_state_file.filestatecontroller.html" class="tsd-signature-type" data-tsd-kind="Class">FileStateController</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/local-state/src/file/controller.ts#L130">packages/local-state/src/file/controller.ts:130</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>options: <a href="../modules/local_state_file_types.html#filestateconfigs" class="tsd-signature-type" data-tsd-kind="Type alias">FileStateConfigs</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> marshaler: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/core_base_marshaler.marshaler.html" class="tsd-signature-type" data-tsd-kind="Interface">Marshaler</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> serializer: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/local_state_file_types.filestateserializer.html" class="tsd-signature-type" data-tsd-kind="Interface">FileStateSerializer</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="local_state_file.filestatecontroller.html" class="tsd-signature-type" data-tsd-kind="Class">FileStateController</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="marshaler" class="tsd-anchor"></a>
+					<h3>marshaler</h3>
+					<div class="tsd-signature tsd-kind-icon">marshaler<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core_base_marshaler.marshaler.html" class="tsd-signature-type" data-tsd-kind="Interface">Marshaler</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/local-state/src/file/controller.ts#L121">packages/local-state/src/file/controller.ts:121</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="path" class="tsd-anchor"></a>
+					<h3>path</h3>
+					<div class="tsd-signature tsd-kind-icon">path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/local-state/src/file/controller.ts#L120">packages/local-state/src/file/controller.ts:120</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="serializer" class="tsd-anchor"></a>
+					<h3>serializer</h3>
+					<div class="tsd-signature tsd-kind-icon">serializer<span class="tsd-signature-symbol">:</span> <a href="../interfaces/local_state_file_types.filestateserializer.html" class="tsd-signature-type" data-tsd-kind="Interface">FileStateSerializer</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/local-state/src/file/controller.ts#L122">packages/local-state/src/file/controller.ts:122</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="channelstate" class="tsd-anchor"></a>
+					<h3>channel<wbr>State</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">channel<wbr>State<span class="tsd-signature-symbol">(</span>channel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/core_types.machinatchannel.html" class="tsd-signature-type" data-tsd-kind="Interface">MachinatChannel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FileStateAccessor</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/core_base_statecontroller.basestatecontroller.html">BaseStateController</a>.<a href="../interfaces/core_base_statecontroller.basestatecontroller.html#channelstate">channelState</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/local-state/src/file/controller.ts#L145">packages/local-state/src/file/controller.ts:145</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Return the <a href="../interfaces/core_base_statecontroller.stateaccessor.html">StateAccessor</a> of a channel</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>channel: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/core_types.machinatchannel.html" class="tsd-signature-type" data-tsd-kind="Interface">MachinatChannel</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">FileStateAccessor</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="globalstate" class="tsd-anchor"></a>
+					<h3>global<wbr>State</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">global<wbr>State<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FileStateAccessor</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/core_base_statecontroller.basestatecontroller.html">BaseStateController</a>.<a href="../interfaces/core_base_statecontroller.basestatecontroller.html#globalstate">globalState</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/local-state/src/file/controller.ts#L163">packages/local-state/src/file/controller.ts:163</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Return the <a href="../interfaces/core_base_statecontroller.stateaccessor.html">StateAccessor</a> of a global name</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">FileStateAccessor</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="userstate" class="tsd-anchor"></a>
+					<h3>user<wbr>State</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">user<wbr>State<span class="tsd-signature-symbol">(</span>user<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/core_types.machinatuser.html" class="tsd-signature-type" data-tsd-kind="Interface">MachinatUser</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FileStateAccessor</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/core_base_statecontroller.basestatecontroller.html">BaseStateController</a>.<a href="../interfaces/core_base_statecontroller.basestatecontroller.html#userstate">userState</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/local-state/src/file/controller.ts#L154">packages/local-state/src/file/controller.ts:154</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Return the <a href="../interfaces/core_base_statecontroller.stateaccessor.html">StateAccessor</a> of a user</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>user: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/core_types.machinatuser.html" class="tsd-signature-type" data-tsd-kind="Interface">MachinatUser</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">FileStateAccessor</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Modules</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/auth.html">auth</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/core.html">core</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/dialogflow.html">dialogflow</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/http.html">http</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/line.html">line</a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/local_state.html">local-<wbr>state</a>
+						<ul>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/local_state.filestate.html">File<wbr>State</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/local_state.inmemorystate.html">In<wbr>Memory<wbr>State</a>
+							</li>
+							<li class="current tsd-kind-module">
+								<a href="../modules/local_state_file.html">local-<wbr>state/file</a>
+							</li>
+							<li class=" tsd-kind-module">
+								<a href="../modules/local_state_file_types.html">local-<wbr>state/file/types</a>
+							</li>
+							<li class=" tsd-kind-module">
+								<a href="../modules/local_state_inmemory.html">local-<wbr>state/in<wbr>Memory</a>
+							</li>
+						</ul>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/messenger.html">messenger</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/next.html">next</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/redis_state.html">redis-<wbr>state</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/script.html">script</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/stream.html">stream</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/telegram.html">telegram</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/websocket.html">websocket</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/webview.html">webview</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="../modules/local_state_file.html#default" class="tsd-kind-icon">default</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="local_state_file.filestatecontroller.html" class="tsd-kind-icon">File<wbr>State<wbr>Controller</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="local_state_file.filestatecontroller.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="local_state_file.filestatecontroller.html#marshaler" class="tsd-kind-icon">marshaler</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="local_state_file.filestatecontroller.html#path" class="tsd-kind-icon">path</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="local_state_file.filestatecontroller.html#serializer" class="tsd-kind-icon">serializer</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="local_state_file.filestatecontroller.html#channelstate" class="tsd-kind-icon">channel<wbr>State</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="local_state_file.filestatecontroller.html#globalstate" class="tsd-kind-icon">global<wbr>State</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="local_state_file.filestatecontroller.html#userstate" class="tsd-kind-icon">user<wbr>State</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
