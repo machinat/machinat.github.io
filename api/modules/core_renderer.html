@@ -76,6 +76,21 @@
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="core_renderer.html#breaksegment" class="tsd-kind-icon">Break<wbr>Segment</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter"><a href="core_renderer.html#innerrenderfn" class="tsd-kind-icon">Inner<wbr>Render<wbr>Fn</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter"><a href="core_renderer.html#intermediatesegment" class="tsd-kind-icon">Intermediate<wbr>Segment</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter"><a href="core_renderer.html#outputsegment" class="tsd-kind-icon">Output<wbr>Segment</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter"><a href="core_renderer.html#partsegment" class="tsd-kind-icon">Part<wbr>Segment</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="core_renderer.html#pausesegment" class="tsd-kind-icon">Pause<wbr>Segment</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter"><a href="core_renderer.html#rawsegment" class="tsd-kind-icon">Raw<wbr>Segment</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="core_renderer.html#textsegment" class="tsd-kind-icon">Text<wbr>Segment</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="core_renderer.html#thunksegment" class="tsd-kind-icon">Thunk<wbr>Segment</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter"><a href="core_renderer.html#unitsegment" class="tsd-kind-icon">Unit<wbr>Segment</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="core_renderer.html#annotatenativecomponent" class="tsd-kind-icon">annotate<wbr>Native<wbr>Component</a></li>
@@ -90,18 +105,303 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+					<a name="breaksegment" class="tsd-anchor"></a>
+					<h3>Break<wbr>Segment</h3>
+					<div class="tsd-signature tsd-kind-icon">Break<wbr>Segment<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>node<span class="tsd-signature-symbol">: </span><a href="core.html#machinatnode" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatNode</a><span class="tsd-signature-symbol">; </span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;break&quot;</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/core/src/renderer/types.ts#L43">packages/core/src/renderer/types.ts:43</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>node<span class="tsd-signature-symbol">: </span><a href="core.html#machinatnode" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatNode</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;break&quot;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="innerrenderfn" class="tsd-anchor"></a>
+					<h3>Inner<wbr>Render<wbr>Fn</h3>
+					<div class="tsd-signature tsd-kind-icon">Inner<wbr>Render<wbr>Fn&lt;Value&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="core.html#machinatnode" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatNode</a>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="core_renderer.html#intermediatesegment" class="tsd-signature-type" data-tsd-kind="Type alias">IntermediateSegment</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/core/src/renderer/types.ts#L69">packages/core/src/renderer/types.ts:69</a></li>
+						</ul>
+					</aside>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>Value</h4>
+						</li>
+					</ul>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="core.html#machinatnode" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatNode</a>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="core_renderer.html#intermediatesegment" class="tsd-signature-type" data-tsd-kind="Type alias">IntermediateSegment</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>node: <a href="core.html#machinatnode" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatNode</a></h5>
+											</li>
+											<li>
+												<h5>path: <span class="tsd-signature-type">string</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="core_renderer.html#intermediatesegment" class="tsd-signature-type" data-tsd-kind="Type alias">IntermediateSegment</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="intermediatesegment" class="tsd-anchor"></a>
+					<h3>Intermediate<wbr>Segment</h3>
+					<div class="tsd-signature tsd-kind-icon">Intermediate<wbr>Segment&lt;UnitValue, PartValue&gt;<span class="tsd-signature-symbol">:</span> <a href="core_renderer.html#outputsegment" class="tsd-signature-type" data-tsd-kind="Type alias">OutputSegment</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">UnitValue</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="core_renderer.html#breaksegment" class="tsd-signature-type" data-tsd-kind="Type alias">BreakSegment</a><span class="tsd-signature-symbol"> | </span><a href="core_renderer.html#partsegment" class="tsd-signature-type" data-tsd-kind="Type alias">PartSegment</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">PartValue</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/core/src/renderer/types.ts#L64">packages/core/src/renderer/types.ts:64</a></li>
+						</ul>
+					</aside>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>UnitValue</h4>
+						</li>
+						<li>
+							<h4>PartValue = <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="outputsegment" class="tsd-anchor"></a>
+					<h3>Output<wbr>Segment</h3>
+					<div class="tsd-signature tsd-kind-icon">Output<wbr>Segment&lt;Value&gt;<span class="tsd-signature-symbol">:</span> <a href="core_renderer.html#textsegment" class="tsd-signature-type" data-tsd-kind="Type alias">TextSegment</a><span class="tsd-signature-symbol"> | </span><a href="core_renderer.html#unitsegment" class="tsd-signature-type" data-tsd-kind="Type alias">UnitSegment</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="core_renderer.html#rawsegment" class="tsd-signature-type" data-tsd-kind="Type alias">RawSegment</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="core_renderer.html#pausesegment" class="tsd-signature-type" data-tsd-kind="Type alias">PauseSegment</a><span class="tsd-signature-symbol"> | </span><a href="core_renderer.html#thunksegment" class="tsd-signature-type" data-tsd-kind="Type alias">ThunkSegment</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/core/src/renderer/types.ts#L57">packages/core/src/renderer/types.ts:57</a></li>
+						</ul>
+					</aside>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>Value</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="partsegment" class="tsd-anchor"></a>
+					<h3>Part<wbr>Segment</h3>
+					<div class="tsd-signature tsd-kind-icon">Part<wbr>Segment&lt;Value&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>node<span class="tsd-signature-symbol">: </span><a href="core.html#machinatnode" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatNode</a><span class="tsd-signature-symbol">; </span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;part&quot;</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/core/src/renderer/types.ts#L15">packages/core/src/renderer/types.ts:15</a></li>
+						</ul>
+					</aside>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>Value</h4>
+						</li>
+					</ul>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>node<span class="tsd-signature-symbol">: </span><a href="core.html#machinatnode" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatNode</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;part&quot;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Value</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+					<a name="pausesegment" class="tsd-anchor"></a>
+					<h3>Pause<wbr>Segment</h3>
+					<div class="tsd-signature tsd-kind-icon">Pause<wbr>Segment<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>node<span class="tsd-signature-symbol">: </span><a href="core.html#machinatnode" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatNode</a><span class="tsd-signature-symbol">; </span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;pause&quot;</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="core.html#pauseuntilfn" class="tsd-signature-type" data-tsd-kind="Type alias">PauseUntilFn</a><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/core/src/renderer/types.ts#L36">packages/core/src/renderer/types.ts:36</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>node<span class="tsd-signature-symbol">: </span><a href="core.html#machinatnode" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatNode</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;pause&quot;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="core.html#pauseuntilfn" class="tsd-signature-type" data-tsd-kind="Type alias">PauseUntilFn</a></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="rawsegment" class="tsd-anchor"></a>
+					<h3>Raw<wbr>Segment</h3>
+					<div class="tsd-signature tsd-kind-icon">Raw<wbr>Segment&lt;Value&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>node<span class="tsd-signature-symbol">: </span><a href="core.html#rawelement" class="tsd-signature-type" data-tsd-kind="Type alias">RawElement</a><span class="tsd-signature-symbol">; </span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;raw&quot;</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/core/src/renderer/types.ts#L29">packages/core/src/renderer/types.ts:29</a></li>
+						</ul>
+					</aside>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>Value</h4>
+						</li>
+					</ul>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>node<span class="tsd-signature-symbol">: </span><a href="core.html#rawelement" class="tsd-signature-type" data-tsd-kind="Type alias">RawElement</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;raw&quot;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Value</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+					<a name="textsegment" class="tsd-anchor"></a>
+					<h3>Text<wbr>Segment</h3>
+					<div class="tsd-signature tsd-kind-icon">Text<wbr>Segment<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>node<span class="tsd-signature-symbol">: </span><a href="core.html#machinatnode" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatNode</a><span class="tsd-signature-symbol">; </span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;text&quot;</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/core/src/renderer/types.ts#L8">packages/core/src/renderer/types.ts:8</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>node<span class="tsd-signature-symbol">: </span><a href="core.html#machinatnode" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatNode</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;text&quot;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+					<a name="thunksegment" class="tsd-anchor"></a>
+					<h3>Thunk<wbr>Segment</h3>
+					<div class="tsd-signature tsd-kind-icon">Thunk<wbr>Segment<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>node<span class="tsd-signature-symbol">: </span><a href="core.html#machinatnode" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatNode</a><span class="tsd-signature-symbol">; </span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;thunk&quot;</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><a href="core.html#thunkeffectfn" class="tsd-signature-type" data-tsd-kind="Type alias">ThunkEffectFn</a><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/core/src/renderer/types.ts#L50">packages/core/src/renderer/types.ts:50</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>node<span class="tsd-signature-symbol">: </span><a href="core.html#machinatnode" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatNode</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;thunk&quot;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>value<span class="tsd-signature-symbol">: </span><a href="core.html#thunkeffectfn" class="tsd-signature-type" data-tsd-kind="Type alias">ThunkEffectFn</a></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="unitsegment" class="tsd-anchor"></a>
+					<h3>Unit<wbr>Segment</h3>
+					<div class="tsd-signature tsd-kind-icon">Unit<wbr>Segment&lt;Value&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>node<span class="tsd-signature-symbol">: </span><a href="core.html#machinatnode" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatNode</a><span class="tsd-signature-symbol">; </span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;unit&quot;</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/core/src/renderer/types.ts#L22">packages/core/src/renderer/types.ts:22</a></li>
+						</ul>
+					</aside>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>Value</h4>
+						</li>
+					</ul>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>node<span class="tsd-signature-symbol">: </span><a href="core.html#machinatnode" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatNode</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;unit&quot;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Value</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="annotatenativecomponent" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> annotate<wbr>Native<wbr>Component</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">annotate<wbr>Native<wbr>Component<span class="tsd-signature-symbol">(</span>platform<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span>&lt;Component&gt;<span class="tsd-signature-symbol">(</span>componentFn<span class="tsd-signature-symbol">: </span><a href="core_renderer_types.html#functionof" class="tsd-signature-type" data-tsd-kind="Type alias">FunctionOf</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Component</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Component</span></li>
+						<li class="tsd-signature tsd-kind-icon">annotate<wbr>Native<wbr>Component<span class="tsd-signature-symbol">(</span>platform<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span>&lt;Component&gt;<span class="tsd-signature-symbol">(</span>componentFn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FunctionOf</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Component</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Component</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/core/src/renderer/componentHelper.ts#L17">packages/core/src/renderer/componentHelper.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/core/src/renderer/componentHelper.ts#L20">packages/core/src/renderer/componentHelper.ts:20</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -110,24 +410,24 @@
 									<h5>platform: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns &lt;Component&gt;<span class="tsd-signature-symbol">(</span>componentFn<span class="tsd-signature-symbol">: </span><a href="core_renderer_types.html#functionof" class="tsd-signature-type" data-tsd-kind="Type alias">FunctionOf</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Component</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Component</span></h4>
+							<h4 class="tsd-returns-title">Returns &lt;Component&gt;<span class="tsd-signature-symbol">(</span>componentFn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FunctionOf</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Component</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Component</span></h4>
 							<ul class="tsd-parameters">
 								<li class="tsd-parameter-signature">
 									<ul class="tsd-signatures tsd-kind-type-literal tsd-has-type-parameter">
-										<li class="tsd-signature tsd-kind-icon">&lt;Component&gt;<span class="tsd-signature-symbol">(</span>componentFn<span class="tsd-signature-symbol">: </span><a href="core_renderer_types.html#functionof" class="tsd-signature-type" data-tsd-kind="Type alias">FunctionOf</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Component</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Component</span></li>
+										<li class="tsd-signature tsd-kind-icon">&lt;Component&gt;<span class="tsd-signature-symbol">(</span>componentFn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FunctionOf</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Component</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Component</span></li>
 									</ul>
 									<ul class="tsd-descriptions">
 										<li class="tsd-description">
 											<h4 class="tsd-type-parameters-title">Type parameters</h4>
 											<ul class="tsd-type-parameters">
 												<li>
-													<h4>Component<span class="tsd-signature-symbol">: </span><a href="core_types.html#nativecomponent" class="tsd-signature-type" data-tsd-kind="Type alias">NativeComponent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+													<h4>Component<span class="tsd-signature-symbol">: </span><a href="core.html#nativecomponent" class="tsd-signature-type" data-tsd-kind="Type alias">NativeComponent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
 												</li>
 											</ul>
 											<h4 class="tsd-parameters-title">Parameters</h4>
 											<ul class="tsd-parameters">
 												<li>
-													<h5>componentFn: <a href="core_renderer_types.html#functionof" class="tsd-signature-type" data-tsd-kind="Type alias">FunctionOf</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Component</span><span class="tsd-signature-symbol">&gt;</span></h5>
+													<h5>componentFn: <span class="tsd-signature-type">FunctionOf</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Component</span><span class="tsd-signature-symbol">&gt;</span></h5>
 												</li>
 											</ul>
 											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Component</span></h4>
@@ -142,25 +442,25 @@
 					<a name="makebreaksegment" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> make<wbr>Break<wbr>Segment</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">make<wbr>Break<wbr>Segment<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="core_types.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="core_types.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_renderer_types.html#breaksegment" class="tsd-signature-type" data-tsd-kind="Type alias">BreakSegment</a></li>
+						<li class="tsd-signature tsd-kind-icon">make<wbr>Break<wbr>Segment<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="core.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="core.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_renderer.html#breaksegment" class="tsd-signature-type" data-tsd-kind="Type alias">BreakSegment</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/core/src/renderer/componentHelper.ts#L33">packages/core/src/renderer/componentHelper.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/core/src/renderer/componentHelper.ts#L36">packages/core/src/renderer/componentHelper.ts:36</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>node: <a href="core_types.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="core_types.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>node: <a href="core.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="core.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>path: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="core_renderer_types.html#breaksegment" class="tsd-signature-type" data-tsd-kind="Type alias">BreakSegment</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="core_renderer.html#breaksegment" class="tsd-signature-type" data-tsd-kind="Type alias">BreakSegment</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -168,13 +468,13 @@
 					<a name="makepartsegment" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> make<wbr>Part<wbr>Segment</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">make<wbr>Part<wbr>Segment&lt;Value&gt;<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="core_types.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="core_types.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_renderer_types.html#partsegment" class="tsd-signature-type" data-tsd-kind="Type alias">PartSegment</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">make<wbr>Part<wbr>Segment&lt;Value&gt;<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="core.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="core.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_renderer.html#partsegment" class="tsd-signature-type" data-tsd-kind="Type alias">PartSegment</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/core/src/renderer/componentHelper.ts#L54">packages/core/src/renderer/componentHelper.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/core/src/renderer/componentHelper.ts#L57">packages/core/src/renderer/componentHelper.ts:57</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -186,7 +486,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>node: <a href="core_types.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="core_types.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>node: <a href="core.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="core.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>path: <span class="tsd-signature-type">string</span></h5>
@@ -195,7 +495,7 @@
 									<h5>value: <span class="tsd-signature-type">Value</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="core_renderer_types.html#partsegment" class="tsd-signature-type" data-tsd-kind="Type alias">PartSegment</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="core_renderer.html#partsegment" class="tsd-signature-type" data-tsd-kind="Type alias">PartSegment</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -203,28 +503,28 @@
 					<a name="makepausesegment" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> make<wbr>Pause<wbr>Segment</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">make<wbr>Pause<wbr>Segment<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="core_types.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="core_types.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">?: </span><a href="core_types.html#pauseuntilfn" class="tsd-signature-type" data-tsd-kind="Type alias">PauseUntilFn</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_renderer_types.html#pausesegment" class="tsd-signature-type" data-tsd-kind="Type alias">PauseSegment</a></li>
+						<li class="tsd-signature tsd-kind-icon">make<wbr>Pause<wbr>Segment<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="core.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="core.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">?: </span><a href="core.html#pauseuntilfn" class="tsd-signature-type" data-tsd-kind="Type alias">PauseUntilFn</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_renderer.html#pausesegment" class="tsd-signature-type" data-tsd-kind="Type alias">PauseSegment</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/core/src/renderer/componentHelper.ts#L76">packages/core/src/renderer/componentHelper.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/core/src/renderer/componentHelper.ts#L79">packages/core/src/renderer/componentHelper.ts:79</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>node: <a href="core_types.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="core_types.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>node: <a href="core.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="core.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>path: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> value: <a href="core_types.html#pauseuntilfn" class="tsd-signature-type" data-tsd-kind="Type alias">PauseUntilFn</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> value: <a href="core.html#pauseuntilfn" class="tsd-signature-type" data-tsd-kind="Type alias">PauseUntilFn</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="core_renderer_types.html#pausesegment" class="tsd-signature-type" data-tsd-kind="Type alias">PauseSegment</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="core_renderer.html#pausesegment" class="tsd-signature-type" data-tsd-kind="Type alias">PauseSegment</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -232,19 +532,19 @@
 					<a name="maketextsegment" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> make<wbr>Text<wbr>Segment</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">make<wbr>Text<wbr>Segment<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="core_types.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="core_types.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_renderer_types.html#textsegment" class="tsd-signature-type" data-tsd-kind="Type alias">TextSegment</a></li>
+						<li class="tsd-signature tsd-kind-icon">make<wbr>Text<wbr>Segment<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="core.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="core.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_renderer.html#textsegment" class="tsd-signature-type" data-tsd-kind="Type alias">TextSegment</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/core/src/renderer/componentHelper.ts#L43">packages/core/src/renderer/componentHelper.ts:43</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/core/src/renderer/componentHelper.ts#L46">packages/core/src/renderer/componentHelper.ts:46</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>node: <a href="core_types.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="core_types.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>node: <a href="core.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="core.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>path: <span class="tsd-signature-type">string</span></h5>
@@ -253,7 +553,7 @@
 									<h5>text: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="core_renderer_types.html#textsegment" class="tsd-signature-type" data-tsd-kind="Type alias">TextSegment</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="core_renderer.html#textsegment" class="tsd-signature-type" data-tsd-kind="Type alias">TextSegment</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -261,13 +561,13 @@
 					<a name="makeunitsegment" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> make<wbr>Unit<wbr>Segment</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">make<wbr>Unit<wbr>Segment&lt;Value&gt;<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="core_types.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="core_types.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_renderer_types.html#unitsegment" class="tsd-signature-type" data-tsd-kind="Type alias">UnitSegment</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">make<wbr>Unit<wbr>Segment&lt;Value&gt;<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="core.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="core.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_renderer.html#unitsegment" class="tsd-signature-type" data-tsd-kind="Type alias">UnitSegment</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/core/src/renderer/componentHelper.ts#L65">packages/core/src/renderer/componentHelper.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/core/src/renderer/componentHelper.ts#L68">packages/core/src/renderer/componentHelper.ts:68</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -279,7 +579,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>node: <a href="core_types.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="core_types.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>node: <a href="core.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="core.html#machinatelement" class="tsd-signature-type" data-tsd-kind="Type alias">MachinatElement</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5>path: <span class="tsd-signature-type">string</span></h5>
@@ -288,7 +588,7 @@
 									<h5>value: <span class="tsd-signature-type">Value</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="core_renderer_types.html#unitsegment" class="tsd-signature-type" data-tsd-kind="Type alias">UnitSegment</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="core_renderer.html#unitsegment" class="tsd-signature-type" data-tsd-kind="Type alias">UnitSegment</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -328,9 +628,6 @@
 								<a href="core_engine.html">core/engine</a>
 							</li>
 							<li class=" tsd-kind-module">
-								<a href="core_engine_types.html">core/engine/types</a>
-							</li>
-							<li class=" tsd-kind-module">
 								<a href="core_iterator_map.html">core/iterator/map</a>
 							</li>
 							<li class=" tsd-kind-module">
@@ -348,23 +645,11 @@
 							<li class=" tsd-kind-module">
 								<a href="core_queue.html">core/queue</a>
 							</li>
-							<li class=" tsd-kind-module">
-								<a href="core_queue_types.html">core/queue/types</a>
-							</li>
 							<li class="current tsd-kind-module">
 								<a href="core_renderer.html">core/renderer</a>
 							</li>
 							<li class=" tsd-kind-module">
-								<a href="core_renderer_types.html">core/renderer/types</a>
-							</li>
-							<li class=" tsd-kind-module">
 								<a href="core_service.html">core/service</a>
-							</li>
-							<li class=" tsd-kind-module">
-								<a href="core_service_types.html">core/service/types</a>
-							</li>
-							<li class=" tsd-kind-module">
-								<a href="core_types.html">core/types</a>
 							</li>
 							<li class=" tsd-kind-module">
 								<a href="core_utils_compose.html">core/utils/compose</a>
@@ -389,6 +674,36 @@
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="../classes/core_renderer.default.html" class="tsd-kind-icon">default</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="core_renderer.html#breaksegment" class="tsd-kind-icon">Break<wbr>Segment</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="core_renderer.html#innerrenderfn" class="tsd-kind-icon">Inner<wbr>Render<wbr>Fn</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="core_renderer.html#intermediatesegment" class="tsd-kind-icon">Intermediate<wbr>Segment</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="core_renderer.html#outputsegment" class="tsd-kind-icon">Output<wbr>Segment</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="core_renderer.html#partsegment" class="tsd-kind-icon">Part<wbr>Segment</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="core_renderer.html#pausesegment" class="tsd-kind-icon">Pause<wbr>Segment</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="core_renderer.html#rawsegment" class="tsd-kind-icon">Raw<wbr>Segment</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="core_renderer.html#textsegment" class="tsd-kind-icon">Text<wbr>Segment</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="core_renderer.html#thunksegment" class="tsd-kind-icon">Thunk<wbr>Segment</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="core_renderer.html#unitsegment" class="tsd-kind-icon">Unit<wbr>Segment</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="core_renderer.html#annotatenativecomponent" class="tsd-kind-icon">annotate<wbr>Native<wbr>Component</a>
@@ -422,6 +737,12 @@
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>

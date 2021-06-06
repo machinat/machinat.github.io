@@ -61,7 +61,7 @@
 					<a href="websocket_client.websocketclient.html">WebSocketClient</a>
 				</li>
 			</ul>
-			<h1>Class WebSocketClient&lt;User, Value&gt;</h1>
+			<h1>Class WebSocketClient&lt;User, Value, Credential&gt;</h1>
 		</div>
 	</div>
 </header>
@@ -72,10 +72,13 @@
 				<h3>Type parameters</h3>
 				<ul class="tsd-type-parameters">
 					<li>
-						<h4>User<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/core_types.machinatuser.html" class="tsd-signature-type" data-tsd-kind="Interface">MachinatUser</a> = <span class="tsd-signature-type">null</span></h4>
+						<h4>User<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/core.machinatuser.html" class="tsd-signature-type" data-tsd-kind="Interface">MachinatUser</a> = <span class="tsd-signature-type">null</span></h4>
 					</li>
 					<li>
-						<h4>Value<span class="tsd-signature-symbol">: </span><a href="../modules/websocket_types.html#eventvalue" class="tsd-signature-type" data-tsd-kind="Type alias">EventValue</a> = <a href="../modules/websocket_types.html#eventvalue" class="tsd-signature-type" data-tsd-kind="Type alias">EventValue</a></h4>
+						<h4>Value<span class="tsd-signature-symbol">: </span><a href="../modules/websocket.html#eventvalue" class="tsd-signature-type" data-tsd-kind="Type alias">EventValue</a> = <a href="../modules/websocket.html#eventvalue" class="tsd-signature-type" data-tsd-kind="Type alias">EventValue</a></h4>
+					</li>
+					<li>
+						<h4>Credential = <span class="tsd-signature-type">null</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -83,7 +86,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="websocket_client.emitter.html" class="tsd-signature-type" data-tsd-kind="Class">Emitter</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><a href="../modules/websocket_types.html#websocketevent" class="tsd-signature-type" data-tsd-kind="Type alias">WebSocketEvent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span>
+						<a href="websocket_client.clientemitter.html" class="tsd-signature-type" data-tsd-kind="Class">ClientEmitter</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">WebSocketClientContext</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">WebSocketClient</span>
@@ -132,32 +135,35 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Web<wbr>Socket<wbr>Client&lt;User, Value&gt;<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ClientOptions</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="websocket_client.websocketclient.html" class="tsd-signature-type" data-tsd-kind="Class">WebSocketClient</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Web<wbr>Socket<wbr>Client&lt;User, Value, Credential&gt;<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ClientOptions</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Credential</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="websocket_client.websocketclient.html" class="tsd-signature-type" data-tsd-kind="Class">WebSocketClient</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Credential</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="websocket_client.emitter.html">Emitter</a>.<a href="websocket_client.emitter.html#constructor">constructor</a></p>
+								<p>Inherited from <a href="websocket_client.clientemitter.html">ClientEmitter</a>.<a href="websocket_client.clientemitter.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/websocket/src/client/client.ts#L29">packages/websocket/src/client/client.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/websocket/src/client/client.ts#L37">packages/websocket/src/client/client.ts:37</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>User<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/core_types.machinatuser.html" class="tsd-signature-type" data-tsd-kind="Interface">MachinatUser</a> = <span class="tsd-signature-type">null</span></h4>
+									<h4>User<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/core.machinatuser.html" class="tsd-signature-type" data-tsd-kind="Interface">MachinatUser</a> = <span class="tsd-signature-type">null</span></h4>
 								</li>
 								<li>
-									<h4>Value<span class="tsd-signature-symbol">: </span><a href="../modules/websocket_types.html#eventvalue" class="tsd-signature-type" data-tsd-kind="Type alias">EventValue</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span> = <a href="../modules/websocket_types.html#eventvalue" class="tsd-signature-type" data-tsd-kind="Type alias">EventValue</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									<h4>Value<span class="tsd-signature-symbol">: </span><a href="../modules/websocket.html#eventvalue" class="tsd-signature-type" data-tsd-kind="Type alias">EventValue</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span> = <a href="../modules/websocket.html#eventvalue" class="tsd-signature-type" data-tsd-kind="Type alias">EventValue</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+								</li>
+								<li>
+									<h4>Credential = <span class="tsd-signature-type">null</span></h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>__namedParameters: <span class="tsd-signature-type">ClientOptions</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></h5>
+									<h5>__namedParameters: <span class="tsd-signature-type">ClientOptions</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Credential</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="websocket_client.websocketclient.html" class="tsd-signature-type" data-tsd-kind="Class">WebSocketClient</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="websocket_client.websocketclient.html" class="tsd-signature-type" data-tsd-kind="Class">WebSocketClient</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Credential</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -174,7 +180,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/websocket/src/client/client.ts#L100">packages/websocket/src/client/client.ts:100</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/websocket/src/client/client.ts#L67">packages/websocket/src/client/client.ts:67</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">WebSocketConnection</span></h4>
@@ -191,7 +197,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/websocket/src/client/client.ts#L92">packages/websocket/src/client/client.ts:92</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/websocket/src/client/client.ts#L59">packages/websocket/src/client/client.ts:59</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -208,7 +214,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/websocket/src/client/client.ts#L96">packages/websocket/src/client/client.ts:96</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/websocket/src/client/client.ts#L63">packages/websocket/src/client/client.ts:63</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">User</span></h4>
@@ -227,9 +233,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="websocket_client.emitter.html">Emitter</a>.<a href="websocket_client.emitter.html#_emiterror">_emitError</a></p>
+								<p>Inherited from <a href="websocket_client.clientemitter.html">ClientEmitter</a>.<a href="websocket_client.clientemitter.html#_emiterror">_emitError</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/websocket/src/client/Emitter.ts#L50">packages/websocket/src/client/Emitter.ts:50</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/websocket/src/client/ClientEmitter.ts#L50">packages/websocket/src/client/ClientEmitter.ts:50</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -246,20 +252,20 @@
 					<a name="_emitevent" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _emit<wbr>Event</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">_emit<wbr>Event<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="../modules/websocket_types.html#websocketevent" class="tsd-signature-type" data-tsd-kind="Type alias">WebSocketEvent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">_emit<wbr>Event<span class="tsd-signature-symbol">(</span>ctx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WebSocketClientContext</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="websocket_client.emitter.html">Emitter</a>.<a href="websocket_client.emitter.html#_emitevent">_emitEvent</a></p>
+								<p>Inherited from <a href="websocket_client.clientemitter.html">ClientEmitter</a>.<a href="websocket_client.clientemitter.html#_emitevent">_emitEvent</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/websocket/src/client/Emitter.ts#L44">packages/websocket/src/client/Emitter.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/websocket/src/client/ClientEmitter.ts#L44">packages/websocket/src/client/ClientEmitter.ts:44</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-symbol">[</span><a href="../modules/websocket_types.html#websocketevent" class="tsd-signature-type" data-tsd-kind="Type alias">WebSocketEvent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span></h5>
+									<h5>ctx: <span class="tsd-signature-type">WebSocketClientContext</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -276,7 +282,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/websocket/src/client/client.ts#L108">packages/websocket/src/client/client.ts:108</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/websocket/src/client/client.ts#L75">packages/websocket/src/client/client.ts:75</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -298,9 +304,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="websocket_client.emitter.html">Emitter</a>.<a href="websocket_client.emitter.html#onerror">onError</a></p>
+								<p>Inherited from <a href="websocket_client.clientemitter.html">ClientEmitter</a>.<a href="websocket_client.clientemitter.html#onerror">onError</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/websocket/src/client/Emitter.ts#L27">packages/websocket/src/client/Emitter.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/websocket/src/client/ClientEmitter.ts#L27">packages/websocket/src/client/ClientEmitter.ts:27</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -335,31 +341,31 @@
 					<a name="onevent" class="tsd-anchor"></a>
 					<h3>on<wbr>Event</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Event<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="../modules/websocket_types.html#websocketevent" class="tsd-signature-type" data-tsd-kind="Type alias">WebSocketEvent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Event<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>ctx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WebSocketClientContext</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="websocket_client.emitter.html">Emitter</a>.<a href="websocket_client.emitter.html#onevent">onEvent</a></p>
+								<p>Inherited from <a href="websocket_client.clientemitter.html">ClientEmitter</a>.<a href="websocket_client.clientemitter.html#onevent">onEvent</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/websocket/src/client/Emitter.ts#L10">packages/websocket/src/client/Emitter.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/websocket/src/client/ClientEmitter.ts#L10">packages/websocket/src/client/ClientEmitter.ts:10</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>listener: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="../modules/websocket_types.html#websocketevent" class="tsd-signature-type" data-tsd-kind="Type alias">WebSocketEvent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<h5>listener: <span class="tsd-signature-symbol">(</span>ctx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WebSocketClientContext</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="../modules/websocket_types.html#websocketevent" class="tsd-signature-type" data-tsd-kind="Type alias">WebSocketEvent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>ctx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WebSocketClientContext</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
 													<h4 class="tsd-parameters-title">Parameters</h4>
 													<ul class="tsd-parameters">
 														<li>
-															<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-symbol">[</span><a href="../modules/websocket_types.html#websocketevent" class="tsd-signature-type" data-tsd-kind="Type alias">WebSocketEvent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span></h5>
+															<h5>ctx: <span class="tsd-signature-type">WebSocketClientContext</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">&gt;</span></h5>
 														</li>
 													</ul>
 													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -382,9 +388,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="websocket_client.emitter.html">Emitter</a>.<a href="websocket_client.emitter.html#removeerrorlistener">removeErrorListener</a></p>
+								<p>Inherited from <a href="websocket_client.clientemitter.html">ClientEmitter</a>.<a href="websocket_client.clientemitter.html#removeerrorlistener">removeErrorListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/websocket/src/client/Emitter.ts#L34">packages/websocket/src/client/Emitter.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/websocket/src/client/ClientEmitter.ts#L34">packages/websocket/src/client/ClientEmitter.ts:34</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -419,31 +425,31 @@
 					<a name="removeeventlistener" class="tsd-anchor"></a>
 					<h3>remove<wbr>Event<wbr>Listener</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="../modules/websocket_types.html#websocketevent" class="tsd-signature-type" data-tsd-kind="Type alias">WebSocketEvent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>ctx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WebSocketClientContext</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="websocket_client.emitter.html">Emitter</a>.<a href="websocket_client.emitter.html#removeeventlistener">removeEventListener</a></p>
+								<p>Inherited from <a href="websocket_client.clientemitter.html">ClientEmitter</a>.<a href="websocket_client.clientemitter.html#removeeventlistener">removeEventListener</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/websocket/src/client/Emitter.ts#L17">packages/websocket/src/client/Emitter.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/websocket/src/client/ClientEmitter.ts#L17">packages/websocket/src/client/ClientEmitter.ts:17</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>listener: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="../modules/websocket_types.html#websocketevent" class="tsd-signature-type" data-tsd-kind="Type alias">WebSocketEvent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<h5>listener: <span class="tsd-signature-symbol">(</span>ctx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WebSocketClientContext</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="../modules/websocket_types.html#websocketevent" class="tsd-signature-type" data-tsd-kind="Type alias">WebSocketEvent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>ctx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WebSocketClientContext</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
 													<h4 class="tsd-parameters-title">Parameters</h4>
 													<ul class="tsd-parameters">
 														<li>
-															<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-symbol">[</span><a href="../modules/websocket_types.html#websocketevent" class="tsd-signature-type" data-tsd-kind="Type alias">WebSocketEvent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span></h5>
+															<h5>ctx: <span class="tsd-signature-type">WebSocketClientContext</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">User</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">&gt;</span></h5>
 														</li>
 													</ul>
 													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -461,19 +467,19 @@
 					<a name="send" class="tsd-anchor"></a>
 					<h3>send</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">send<span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><a href="../modules/websocket_types.html#eventinput" class="tsd-signature-type" data-tsd-kind="Type alias">EventInput</a><span class="tsd-signature-symbol"> | </span><a href="../modules/websocket_types.html#eventinput" class="tsd-signature-type" data-tsd-kind="Type alias">EventInput</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">send<span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><a href="../modules/websocket.html#eventinput" class="tsd-signature-type" data-tsd-kind="Type alias">EventInput</a><span class="tsd-signature-symbol"> | </span><a href="../modules/websocket.html#eventinput" class="tsd-signature-type" data-tsd-kind="Type alias">EventInput</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/websocket/src/client/client.ts#L104">packages/websocket/src/client/client.ts:104</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/websocket/src/client/client.ts#L71">packages/websocket/src/client/client.ts:71</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>content: <a href="../modules/websocket_types.html#eventinput" class="tsd-signature-type" data-tsd-kind="Type alias">EventInput</a><span class="tsd-signature-symbol"> | </span><a href="../modules/websocket_types.html#eventinput" class="tsd-signature-type" data-tsd-kind="Type alias">EventInput</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>content: <a href="../modules/websocket.html#eventinput" class="tsd-signature-type" data-tsd-kind="Type alias">EventInput</a><span class="tsd-signature-symbol"> | </span><a href="../modules/websocket.html#eventinput" class="tsd-signature-type" data-tsd-kind="Type alias">EventInput</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -493,6 +499,9 @@
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/core.html">core</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/create_app.html">create-<wbr>app</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/dialogflow.html">dialogflow</a>
@@ -537,9 +546,6 @@
 								<a href="../modules/websocket_client.html">websocket/client</a>
 							</li>
 							<li class=" tsd-kind-module">
-								<a href="../modules/websocket_types.html">websocket/types</a>
-							</li>
-							<li class=" tsd-kind-module">
 								<a href="../modules/websocket_utils_createevent.html">websocket/utils/create<wbr>Event</a>
 							</li>
 							<li class=" tsd-kind-module">
@@ -567,10 +573,10 @@
 						<a href="../modules/websocket_client.html#default" class="tsd-kind-icon">default</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="websocket_client.connector.html" class="tsd-kind-icon">Connector</a>
+						<a href="websocket_client.clientemitter.html" class="tsd-kind-icon">Client<wbr>Emitter</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
-						<a href="websocket_client.emitter.html" class="tsd-kind-icon">Emitter</a>
+						<a href="websocket_client.connector.html" class="tsd-kind-icon">Connector</a>
 					</li>
 				</ul>
 				<ul class="current">
@@ -634,11 +640,17 @@
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>

@@ -79,8 +79,8 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/core_types.machinatchannel.html" class="tsd-signature-type" data-tsd-kind="Interface">MachinatChannel</a></li>
-					<li><a href="../interfaces/core_base_marshaler.marshallable.html" class="tsd-signature-type" data-tsd-kind="Interface">Marshallable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TelegramChatTargetValue</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li><a href="../interfaces/core.machinatchannel.html" class="tsd-signature-type" data-tsd-kind="Interface">MachinatChannel</a></li>
+					<li><a href="../interfaces/core_base_marshaler.marshallableinstance.html" class="tsd-signature-type" data-tsd-kind="Interface">MarshallableInstance</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TelegramChatTargetValue</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -100,6 +100,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="telegram.telegramchattarget.html#id" class="tsd-kind-icon">id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="telegram.telegramchattarget.html#platform" class="tsd-kind-icon">platform</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="telegram.telegramchattarget.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="telegram.telegramchattarget.html#typename" class="tsd-kind-icon">type<wbr>Name</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -112,7 +113,7 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="telegram.telegramchattarget.html#tojsonvalue" class="tsd-kind-icon">toJSONValue</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="telegram.telegramchattarget.html#typename" class="tsd-kind-icon">type<wbr>Name</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="telegram.telegramchattarget.html#typename-1" class="tsd-kind-icon">type<wbr>Name</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="telegram.telegramchattarget.html#fromjsonvalue" class="tsd-kind-icon">fromJSONValue</a></li>
 							</ul>
 						</section>
@@ -131,7 +132,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/telegram/src/channel.ts#L115">packages/telegram/src/channel.ts:115</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/telegram/src/channel.ts#L84">packages/telegram/src/channel.ts:84</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -156,7 +157,7 @@
 					<div class="tsd-signature tsd-kind-icon">bot<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/telegram/src/channel.ts#L111">packages/telegram/src/channel.ts:111</a></li>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/telegram/src/channel.ts#L80">packages/telegram/src/channel.ts:80</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -166,7 +167,7 @@
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/telegram/src/channel.ts#L112">packages/telegram/src/channel.ts:112</a></li>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/telegram/src/channel.ts#L81">packages/telegram/src/channel.ts:81</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -175,9 +176,9 @@
 					<h3>platform</h3>
 					<div class="tsd-signature tsd-kind-icon">platform<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;telegram&quot;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/core_types.machinatchannel.html">MachinatChannel</a>.<a href="../interfaces/core_types.machinatchannel.html#platform">platform</a></p>
+						<p>Implementation of <a href="../interfaces/core.machinatchannel.html">MachinatChannel</a>.<a href="../interfaces/core.machinatchannel.html#platform">platform</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/telegram/src/channel.ts#L114">packages/telegram/src/channel.ts:114</a></li>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/telegram/src/channel.ts#L83">packages/telegram/src/channel.ts:83</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -187,7 +188,17 @@
 					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;unknown&quot;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/telegram/src/channel.ts#L115">packages/telegram/src/channel.ts:115</a></li>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/telegram/src/channel.ts#L84">packages/telegram/src/channel.ts:84</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="typename" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> type<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">type<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &#x27;TelegramChatTarget&#x27;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/telegram/src/channel.ts#L74">packages/telegram/src/channel.ts:74</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -203,9 +214,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/core_types.machinatchannel.html">MachinatChannel</a>.<a href="../interfaces/core_types.machinatchannel.html#uid">uid</a></p>
+								<p>Implementation of <a href="../interfaces/core.machinatchannel.html">MachinatChannel</a>.<a href="../interfaces/core.machinatchannel.html#uid">uid</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/telegram/src/channel.ts#L122">packages/telegram/src/channel.ts:122</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/telegram/src/channel.ts#L91">packages/telegram/src/channel.ts:91</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -224,9 +235,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/core_base_marshaler.marshallable.html">Marshallable</a>.<a href="../interfaces/core_base_marshaler.marshallable.html#tojsonvalue">toJSONValue</a></p>
+								<p>Implementation of <a href="../interfaces/core_base_marshaler.marshallableinstance.html">MarshallableInstance</a>.<a href="../interfaces/core_base_marshaler.marshallableinstance.html#tojsonvalue">toJSONValue</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/telegram/src/channel.ts#L126">packages/telegram/src/channel.ts:126</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/telegram/src/channel.ts#L95">packages/telegram/src/channel.ts:95</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TelegramChatTargetValue</span></h4>
@@ -234,7 +245,7 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="typename" class="tsd-anchor"></a>
+					<a name="typename-1" class="tsd-anchor"></a>
 					<h3>type<wbr>Name</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">type<wbr>Name<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
@@ -242,9 +253,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/core_base_marshaler.marshallable.html">Marshallable</a>.<a href="../interfaces/core_base_marshaler.marshallable.html#typename">typeName</a></p>
+								<p>Implementation of <a href="../interfaces/core_base_marshaler.marshallableinstance.html">MarshallableInstance</a>.<a href="../interfaces/core_base_marshaler.marshallableinstance.html#typename">typeName</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/telegram/src/channel.ts#L131">packages/telegram/src/channel.ts:131</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/telegram/src/channel.ts#L101">packages/telegram/src/channel.ts:101</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -261,7 +272,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/telegram/src/channel.ts#L107">packages/telegram/src/channel.ts:107</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/telegram/src/channel.ts#L76">packages/telegram/src/channel.ts:76</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -287,6 +298,9 @@
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/core.html">core</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/create_app.html">create-<wbr>app</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/dialogflow.html">dialogflow</a>
@@ -328,9 +342,6 @@
 								<a href="../modules/telegram_components.html">telegram/components</a>
 							</li>
 							<li class=" tsd-kind-module">
-								<a href="../modules/telegram_types.html">telegram/types</a>
-							</li>
-							<li class=" tsd-kind-module">
 								<a href="../modules/telegram_webview.html">telegram/webview</a>
 							</li>
 						</ul>
@@ -345,15 +356,6 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="telegram.telegrambot.html" class="tsd-kind-icon">Telegram<wbr>Bot</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="telegram.telegramchat.html" class="tsd-kind-icon">Telegram<wbr>Chat</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="telegram.telegramchatinstance.html" class="tsd-kind-icon">Telegram<wbr>Chat<wbr>Instance</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-module">
@@ -374,6 +376,9 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="telegram.telegramchattarget.html#type" class="tsd-kind-icon">type</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="telegram.telegramchattarget.html#typename" class="tsd-kind-icon">type<wbr>Name</a>
+							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="telegram.telegramchattarget.html#uid" class="tsd-kind-icon">uid</a>
 							</li>
@@ -381,7 +386,7 @@
 								<a href="telegram.telegramchattarget.html#tojsonvalue" class="tsd-kind-icon">toJSONValue</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="telegram.telegramchattarget.html#typename" class="tsd-kind-icon">type<wbr>Name</a>
+								<a href="telegram.telegramchattarget.html#typename-1" class="tsd-kind-icon">type<wbr>Name</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 								<a href="telegram.telegramchattarget.html#fromjsonvalue" class="tsd-kind-icon">fromJSONValue</a>
@@ -390,15 +395,6 @@
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="telegram.telegramprofiler.html" class="tsd-kind-icon">Telegram<wbr>Profiler</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="telegram.telegramreceiver.html" class="tsd-kind-icon">Telegram<wbr>Receiver</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="telegram.telegramuser.html" class="tsd-kind-icon">Telegram<wbr>User</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
@@ -409,6 +405,14 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
+				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
@@ -416,12 +420,11 @@
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
-				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
-				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
 			</ul>
 		</div>

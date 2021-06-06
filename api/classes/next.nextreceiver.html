@@ -103,19 +103,19 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Next<wbr>Receiver<span class="tsd-signature-symbol">(</span>nextApp<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">default</span>, __namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">NextReceiverOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="next.nextreceiver.html" class="tsd-signature-type" data-tsd-kind="Class">NextReceiver</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Next<wbr>Receiver<span class="tsd-signature-symbol">(</span>nextApp<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">NextServer</span>, __namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">NextReceiverOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="next.nextreceiver.html" class="tsd-signature-type" data-tsd-kind="Class">NextReceiver</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/next/src/receiver.ts#L40">packages/next/src/receiver.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/next/src/receiver.ts#L40">packages/next/src/receiver.ts:40</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>nextApp: <span class="tsd-signature-type">default</span></h5>
+									<h5>nextApp: <span class="tsd-signature-type">NextServer</span></h5>
 								</li>
 								<li>
 									<h5>__namedParameters: <span class="tsd-signature-type">NextReceiverOptions</span></h5>
@@ -138,7 +138,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/next/src/receiver.ts#L74">packages/next/src/receiver.ts:74</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/next/src/receiver.ts#L74">packages/next/src/receiver.ts:74</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -158,16 +158,16 @@
 					<a name="handlerequestcallback" class="tsd-anchor"></a>
 					<h3>handle<wbr>Request<wbr>Callback</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">handle<wbr>Request<wbr>Callback<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/http_types.html#requesthandler" class="tsd-signature-type" data-tsd-kind="Type alias">RequestHandler</a></li>
+						<li class="tsd-signature tsd-kind-icon">handle<wbr>Request<wbr>Callback<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/http.html#requesthandler" class="tsd-signature-type" data-tsd-kind="Type alias">RequestHandler</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/next/src/receiver.ts#L78">packages/next/src/receiver.ts:78</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/next/src/receiver.ts#L78">packages/next/src/receiver.ts:78</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/http_types.html#requesthandler" class="tsd-signature-type" data-tsd-kind="Type alias">RequestHandler</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/http.html#requesthandler" class="tsd-signature-type" data-tsd-kind="Type alias">RequestHandler</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -181,7 +181,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/next/src/receiver.ts#L67">packages/next/src/receiver.ts:67</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/next/src/receiver.ts#L67">packages/next/src/receiver.ts:67</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -203,6 +203,9 @@
 						<a href="../modules/core.html">core</a>
 					</li>
 					<li class=" tsd-kind-module">
+						<a href="../modules/create_app.html">create-<wbr>app</a>
+					</li>
+					<li class=" tsd-kind-module">
 						<a href="../modules/dialogflow.html">dialogflow</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -222,9 +225,6 @@
 						<ul>
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="../modules/next.default.html">default</a>
-							</li>
-							<li class=" tsd-kind-module">
-								<a href="../modules/next_types.html">next/types</a>
 							</li>
 						</ul>
 					</li>
@@ -271,6 +271,27 @@
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/next.html#handlenextrequestfn" class="tsd-kind-icon">Handle<wbr>Next<wbr>Request<wbr>Fn</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/next.html#handlerresponse" class="tsd-kind-icon">Handler<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/next.html#nextconfigs" class="tsd-kind-icon">Next<wbr>Configs</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/next.html#nextrequesthandler" class="tsd-kind-icon">Next<wbr>Request<wbr>Handler</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/next.html#nextserver" class="tsd-kind-icon">Next<wbr>Server</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/next.html#nextserveroptions" class="tsd-kind-icon">Next<wbr>Server<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/next.html#requestinfo" class="tsd-kind-icon">Request<wbr>Info</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -285,12 +306,18 @@
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
 			</ul>
 		</div>
 	</div>

@@ -79,8 +79,8 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/core_types.machinatuser.html" class="tsd-signature-type" data-tsd-kind="Interface">MachinatUser</a></li>
-					<li><a href="../interfaces/core_base_marshaler.marshallable.html" class="tsd-signature-type" data-tsd-kind="Interface">Marshallable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">LineUserValue</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li><a href="../interfaces/core.machinatuser.html" class="tsd-signature-type" data-tsd-kind="Interface">MachinatUser</a></li>
+					<li><a href="../interfaces/core_base_marshaler.marshallableinstance.html" class="tsd-signature-type" data-tsd-kind="Interface">MarshallableInstance</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">LineUserValue</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -99,6 +99,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="line.lineuser.html#id" class="tsd-kind-icon">id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="line.lineuser.html#platform" class="tsd-kind-icon">platform</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="line.lineuser.html#providerid" class="tsd-kind-icon">provider<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="line.lineuser.html#typename" class="tsd-kind-icon">type<wbr>Name</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -111,7 +112,7 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="line.lineuser.html#tojsonvalue" class="tsd-kind-icon">toJSONValue</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="line.lineuser.html#typename" class="tsd-kind-icon">type<wbr>Name</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="line.lineuser.html#typename-1" class="tsd-kind-icon">type<wbr>Name</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="line.lineuser.html#fromjsonvalue" class="tsd-kind-icon">fromJSONValue</a></li>
 							</ul>
 						</section>
@@ -130,7 +131,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/line/src/user.ts#L18">packages/line/src/user.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/line/src/user.ts#L20">packages/line/src/user.ts:20</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -155,7 +156,7 @@
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/line/src/user.ts#L14">packages/line/src/user.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/line/src/user.ts#L16">packages/line/src/user.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -164,9 +165,9 @@
 					<h3>platform</h3>
 					<div class="tsd-signature tsd-kind-icon">platform<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;line&quot;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/core_types.machinatuser.html">MachinatUser</a>.<a href="../interfaces/core_types.machinatuser.html#platform">platform</a></p>
+						<p>Implementation of <a href="../interfaces/core.machinatuser.html">MachinatUser</a>.<a href="../interfaces/core.machinatuser.html#platform">platform</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/line/src/user.ts#L12">packages/line/src/user.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/line/src/user.ts#L14">packages/line/src/user.ts:14</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -176,7 +177,17 @@
 					<div class="tsd-signature tsd-kind-icon">provider<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/line/src/user.ts#L13">packages/line/src/user.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/line/src/user.ts#L15">packages/line/src/user.ts:15</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="typename" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> type<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">type<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &#x27;LineUser&#x27;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/line/src/user.ts#L12">packages/line/src/user.ts:12</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -192,9 +203,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/core_types.machinatuser.html">MachinatUser</a>.<a href="../interfaces/core_types.machinatuser.html#uid">uid</a></p>
+								<p>Implementation of <a href="../interfaces/core.machinatuser.html">MachinatUser</a>.<a href="../interfaces/core.machinatuser.html#uid">uid</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/line/src/user.ts#L25">packages/line/src/user.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/line/src/user.ts#L27">packages/line/src/user.ts:27</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -213,9 +224,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/core_base_marshaler.marshallable.html">Marshallable</a>.<a href="../interfaces/core_base_marshaler.marshallable.html#tojsonvalue">toJSONValue</a></p>
+								<p>Implementation of <a href="../interfaces/core_base_marshaler.marshallableinstance.html">MarshallableInstance</a>.<a href="../interfaces/core_base_marshaler.marshallableinstance.html#tojsonvalue">toJSONValue</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/line/src/user.ts#L29">packages/line/src/user.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/line/src/user.ts#L31">packages/line/src/user.ts:31</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">LineUserValue</span></h4>
@@ -223,7 +234,7 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="typename" class="tsd-anchor"></a>
+					<a name="typename-1" class="tsd-anchor"></a>
 					<h3>type<wbr>Name</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">type<wbr>Name<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
@@ -231,9 +242,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/core_base_marshaler.marshallable.html">Marshallable</a>.<a href="../interfaces/core_base_marshaler.marshallable.html#typename">typeName</a></p>
+								<p>Implementation of <a href="../interfaces/core_base_marshaler.marshallableinstance.html">MarshallableInstance</a>.<a href="../interfaces/core_base_marshaler.marshallableinstance.html#typename">typeName</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/line/src/user.ts#L34">packages/line/src/user.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/line/src/user.ts#L37">packages/line/src/user.ts:37</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -250,7 +261,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/line/src/user.ts#L16">packages/line/src/user.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/line/src/user.ts#L18">packages/line/src/user.ts:18</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -278,6 +289,9 @@
 						<a href="../modules/core.html">core</a>
 					</li>
 					<li class=" tsd-kind-module">
+						<a href="../modules/create_app.html">create-<wbr>app</a>
+					</li>
+					<li class=" tsd-kind-module">
 						<a href="../modules/dialogflow.html">dialogflow</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -294,9 +308,6 @@
 							</li>
 							<li class=" tsd-kind-module">
 								<a href="../modules/line_components.html">line/components</a>
-							</li>
-							<li class=" tsd-kind-module">
-								<a href="../modules/line_types.html">line/types</a>
 							</li>
 							<li class=" tsd-kind-module">
 								<a href="../modules/line_webview.html">line/webview</a>
@@ -334,15 +345,6 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="line.linebot.html" class="tsd-kind-icon">Line<wbr>Bot</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="line.linechat.html" class="tsd-kind-icon">Line<wbr>Chat</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="line.linereceiver.html" class="tsd-kind-icon">Line<wbr>Receiver</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-module">
@@ -360,6 +362,9 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="line.lineuser.html#providerid" class="tsd-kind-icon">provider<wbr>Id</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="line.lineuser.html#typename" class="tsd-kind-icon">type<wbr>Name</a>
+							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="line.lineuser.html#uid" class="tsd-kind-icon">uid</a>
 							</li>
@@ -367,7 +372,7 @@
 								<a href="line.lineuser.html#tojsonvalue" class="tsd-kind-icon">toJSONValue</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="line.lineuser.html#typename" class="tsd-kind-icon">type<wbr>Name</a>
+								<a href="line.lineuser.html#typename-1" class="tsd-kind-icon">type<wbr>Name</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 								<a href="line.lineuser.html#fromjsonvalue" class="tsd-kind-icon">fromJSONValue</a>
@@ -376,15 +381,6 @@
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="line.lineuserprofile.html" class="tsd-kind-icon">Line<wbr>User<wbr>Profile</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/line.html#bulk_request_getter" class="tsd-kind-icon">BULK_<wbr>REQUEST_<wbr>GETTER</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/line.html#channel_request_getter" class="tsd-kind-icon">CHANNEL_<wbr>REQUEST_<wbr>GETTER</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
@@ -395,6 +391,14 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
+				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
@@ -402,12 +406,11 @@
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
-				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
-				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
 			</ul>
 		</div>

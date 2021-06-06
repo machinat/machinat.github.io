@@ -70,26 +70,61 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>References</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="http_webhook.html#default" class="tsd-kind-icon">default</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
 							<h3>Classes</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/http_webhook.webhookreceiver.html" class="tsd-kind-icon">Webhook<wbr>Receiver</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/http_webhook.webhookmetadata.html" class="tsd-kind-icon">Webhook<wbr>Metadata</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="http_webhook.html#webhookhandler" class="tsd-kind-icon">Webhook<wbr>Handler</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>References</h2>
-				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
-					<a name="default" class="tsd-anchor"></a>
-					<h3>default</h3>
-					Renames and exports <a href="../classes/http_webhook.webhookreceiver.html">WebhookReceiver</a>
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+					<a name="webhookhandler" class="tsd-anchor"></a>
+					<h3>Webhook<wbr>Handler</h3>
+					<div class="tsd-signature tsd-kind-icon">Webhook<wbr>Handler<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>metadata<span class="tsd-signature-symbol">: </span><a href="../interfaces/http_webhook.webhookmetadata.html" class="tsd-signature-type" data-tsd-kind="Interface">WebhookMetadata</a>, routingInfo<span class="tsd-signature-symbol">?: </span><a href="http.html#routinginfo" class="tsd-signature-type" data-tsd-kind="Type alias">RoutingInfo</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>body<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">; </span>code<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>headers<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/http/src/webhook/types.ts#L8">packages/http/src/webhook/types.ts:8</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>metadata<span class="tsd-signature-symbol">: </span><a href="../interfaces/http_webhook.webhookmetadata.html" class="tsd-signature-type" data-tsd-kind="Interface">WebhookMetadata</a>, routingInfo<span class="tsd-signature-symbol">?: </span><a href="http.html#routinginfo" class="tsd-signature-type" data-tsd-kind="Type alias">RoutingInfo</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>body<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">; </span>code<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>headers<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>metadata: <a href="../interfaces/http_webhook.webhookmetadata.html" class="tsd-signature-type" data-tsd-kind="Interface">WebhookMetadata</a></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> routingInfo: <a href="http.html#routinginfo" class="tsd-signature-type" data-tsd-kind="Type alias">RoutingInfo</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>body<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">; </span>code<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>headers<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -106,6 +141,9 @@
 						<a href="core.html">core</a>
 					</li>
 					<li class=" tsd-kind-module">
+						<a href="create_app.html">create-<wbr>app</a>
+					</li>
+					<li class=" tsd-kind-module">
 						<a href="dialogflow.html">dialogflow</a>
 					</li>
 					<li class="current tsd-kind-module">
@@ -114,14 +152,8 @@
 							<li class=" tsd-kind-namespace tsd-parent-kind-module">
 								<a href="http.default.html">default</a>
 							</li>
-							<li class=" tsd-kind-module">
-								<a href="http_types.html">http/types</a>
-							</li>
 							<li class="current tsd-kind-module">
 								<a href="http_webhook.html">http/webhook</a>
-							</li>
-							<li class=" tsd-kind-module">
-								<a href="http_webhook_types.html">http/webhook/types</a>
 							</li>
 						</ul>
 					</li>
@@ -159,11 +191,14 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-reference tsd-parent-kind-module">
-						<a href="http_webhook.html#default" class="tsd-kind-icon">default</a>
-					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="../classes/http_webhook.webhookreceiver.html" class="tsd-kind-icon">Webhook<wbr>Receiver</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/http_webhook.webhookmetadata.html" class="tsd-kind-icon">Webhook<wbr>Metadata</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="http_webhook.html#webhookhandler" class="tsd-kind-icon">Webhook<wbr>Handler</a>
 					</li>
 				</ul>
 			</nav>
@@ -179,6 +214,12 @@
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>

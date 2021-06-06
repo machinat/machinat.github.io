@@ -75,6 +75,196 @@
 								<li class="tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter"><a href="../classes/core_queue.default.html" class="tsd-kind-icon">default</a></li>
 							</ul>
 						</section>
+						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter"><a href="core_queue.html#failedjobbatchresponse" class="tsd-kind-icon">Failed<wbr>Job<wbr>Batch<wbr>Response</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter"><a href="core_queue.html#failedjobresponse" class="tsd-kind-icon">Failed<wbr>Job<wbr>Response</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter"><a href="core_queue.html#jobbatchresponse" class="tsd-kind-icon">Job<wbr>Batch<wbr>Response</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter"><a href="core_queue.html#jobresponse" class="tsd-kind-icon">Job<wbr>Response</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter"><a href="core_queue.html#successjobbatchresponse" class="tsd-kind-icon">Success<wbr>Job<wbr>Batch<wbr>Response</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter"><a href="core_queue.html#successjobresponse" class="tsd-kind-icon">Success<wbr>Job<wbr>Response</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="failedjobbatchresponse" class="tsd-anchor"></a>
+					<h3>Failed<wbr>Job<wbr>Batch<wbr>Response</h3>
+					<div class="tsd-signature tsd-kind-icon">Failed<wbr>Job<wbr>Batch<wbr>Response&lt;Job, Result&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>batch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="core_queue.html#jobresponse" class="tsd-signature-type" data-tsd-kind="Type alias">JobResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Job</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Result</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>errors<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>success<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/core/src/queue/types.ts#L25">packages/core/src/queue/types.ts:25</a></li>
+						</ul>
+					</aside>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>Job</h4>
+						</li>
+						<li>
+							<h4>Result</h4>
+						</li>
+					</ul>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>batch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="core_queue.html#jobresponse" class="tsd-signature-type" data-tsd-kind="Type alias">JobResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Job</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Result</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>errors<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>success<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">false</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="failedjobresponse" class="tsd-anchor"></a>
+					<h3>Failed<wbr>Job<wbr>Response</h3>
+					<div class="tsd-signature tsd-kind-icon">Failed<wbr>Job<wbr>Response&lt;Job, Result&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol">; </span>job<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Job</span><span class="tsd-signature-symbol">; </span>result<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Result</span><span class="tsd-signature-symbol">; </span>success<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/core/src/queue/types.ts#L8">packages/core/src/queue/types.ts:8</a></li>
+						</ul>
+					</aside>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>Job</h4>
+						</li>
+						<li>
+							<h4>Result</h4>
+						</li>
+					</ul>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Error</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>job<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Job</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>result<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Result</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>success<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">false</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="jobbatchresponse" class="tsd-anchor"></a>
+					<h3>Job<wbr>Batch<wbr>Response</h3>
+					<div class="tsd-signature tsd-kind-icon">Job<wbr>Batch<wbr>Response&lt;Job, Result&gt;<span class="tsd-signature-symbol">:</span> <a href="core_queue.html#successjobbatchresponse" class="tsd-signature-type" data-tsd-kind="Type alias">SuccessJobBatchResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Job</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Result</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="core_queue.html#failedjobbatchresponse" class="tsd-signature-type" data-tsd-kind="Type alias">FailedJobBatchResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Job</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Result</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/core/src/queue/types.ts#L31">packages/core/src/queue/types.ts:31</a></li>
+						</ul>
+					</aside>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>Job</h4>
+						</li>
+						<li>
+							<h4>Result</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="jobresponse" class="tsd-anchor"></a>
+					<h3>Job<wbr>Response</h3>
+					<div class="tsd-signature tsd-kind-icon">Job<wbr>Response&lt;Job, Result&gt;<span class="tsd-signature-symbol">:</span> <a href="core_queue.html#successjobresponse" class="tsd-signature-type" data-tsd-kind="Type alias">SuccessJobResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Job</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Result</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="core_queue.html#failedjobresponse" class="tsd-signature-type" data-tsd-kind="Type alias">FailedJobResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Job</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Result</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/core/src/queue/types.ts#L15">packages/core/src/queue/types.ts:15</a></li>
+						</ul>
+					</aside>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>Job</h4>
+						</li>
+						<li>
+							<h4>Result</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="successjobbatchresponse" class="tsd-anchor"></a>
+					<h3>Success<wbr>Job<wbr>Batch<wbr>Response</h3>
+					<div class="tsd-signature tsd-kind-icon">Success<wbr>Job<wbr>Batch<wbr>Response&lt;Job, Result&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>batch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><a href="core_queue.html#successjobresponse" class="tsd-signature-type" data-tsd-kind="Type alias">SuccessJobResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Job</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Result</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>errors<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">; </span>success<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/core/src/queue/types.ts#L19">packages/core/src/queue/types.ts:19</a></li>
+						</ul>
+					</aside>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>Job</h4>
+						</li>
+						<li>
+							<h4>Result</h4>
+						</li>
+					</ul>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>batch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><a href="core_queue.html#successjobresponse" class="tsd-signature-type" data-tsd-kind="Type alias">SuccessJobResponse</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Job</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Result</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>errors<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>success<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">true</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="successjobresponse" class="tsd-anchor"></a>
+					<h3>Success<wbr>Job<wbr>Response</h3>
+					<div class="tsd-signature tsd-kind-icon">Success<wbr>Job<wbr>Response&lt;Job, Result&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">; </span>job<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Job</span><span class="tsd-signature-symbol">; </span>result<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Result</span><span class="tsd-signature-symbol">; </span>success<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/core/src/queue/types.ts#L1">packages/core/src/queue/types.ts:1</a></li>
+						</ul>
+					</aside>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>Job</h4>
+						</li>
+						<li>
+							<h4>Result</h4>
+						</li>
+					</ul>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>job<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Job</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>result<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Result</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>success<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">true</span></h5>
+							</li>
+						</ul>
 					</div>
 				</section>
 			</section>
@@ -113,9 +303,6 @@
 								<a href="core_engine.html">core/engine</a>
 							</li>
 							<li class=" tsd-kind-module">
-								<a href="core_engine_types.html">core/engine/types</a>
-							</li>
-							<li class=" tsd-kind-module">
 								<a href="core_iterator_map.html">core/iterator/map</a>
 							</li>
 							<li class=" tsd-kind-module">
@@ -134,22 +321,10 @@
 								<a href="core_queue.html">core/queue</a>
 							</li>
 							<li class=" tsd-kind-module">
-								<a href="core_queue_types.html">core/queue/types</a>
-							</li>
-							<li class=" tsd-kind-module">
 								<a href="core_renderer.html">core/renderer</a>
 							</li>
 							<li class=" tsd-kind-module">
-								<a href="core_renderer_types.html">core/renderer/types</a>
-							</li>
-							<li class=" tsd-kind-module">
 								<a href="core_service.html">core/service</a>
-							</li>
-							<li class=" tsd-kind-module">
-								<a href="core_service_types.html">core/service/types</a>
-							</li>
-							<li class=" tsd-kind-module">
-								<a href="core_types.html">core/types</a>
 							</li>
 							<li class=" tsd-kind-module">
 								<a href="core_utils_compose.html">core/utils/compose</a>
@@ -175,6 +350,24 @@
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="../classes/core_queue.default.html" class="tsd-kind-icon">default</a>
 					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="core_queue.html#failedjobbatchresponse" class="tsd-kind-icon">Failed<wbr>Job<wbr>Batch<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="core_queue.html#failedjobresponse" class="tsd-kind-icon">Failed<wbr>Job<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="core_queue.html#jobbatchresponse" class="tsd-kind-icon">Job<wbr>Batch<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="core_queue.html#jobresponse" class="tsd-kind-icon">Job<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="core_queue.html#successjobbatchresponse" class="tsd-kind-icon">Success<wbr>Job<wbr>Batch<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="core_queue.html#successjobresponse" class="tsd-kind-icon">Success<wbr>Job<wbr>Response</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -189,6 +382,12 @@
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>

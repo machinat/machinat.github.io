@@ -79,8 +79,8 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/core_types.machinatuser.html" class="tsd-signature-type" data-tsd-kind="Interface">MachinatUser</a></li>
-					<li><a href="../interfaces/core_base_marshaler.marshallable.html" class="tsd-signature-type" data-tsd-kind="Interface">Marshallable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">MessengerUserValue</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li><a href="../interfaces/core.machinatuser.html" class="tsd-signature-type" data-tsd-kind="Interface">MachinatUser</a></li>
+					<li><a href="../interfaces/core_base_marshaler.marshallableinstance.html" class="tsd-signature-type" data-tsd-kind="Interface">MarshallableInstance</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">MessengerUserValue</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -99,6 +99,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="messenger.messengeruser.html#pageid" class="tsd-kind-icon">page<wbr>Id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="messenger.messengeruser.html#platform" class="tsd-kind-icon">platform</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="messenger.messengeruser.html#psid" class="tsd-kind-icon">psid</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="messenger.messengeruser.html#typename" class="tsd-kind-icon">type<wbr>Name</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -112,7 +113,7 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="messenger.messengeruser.html#tojsonvalue" class="tsd-kind-icon">toJSONValue</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="messenger.messengeruser.html#typename" class="tsd-kind-icon">type<wbr>Name</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="messenger.messengeruser.html#typename-1" class="tsd-kind-icon">type<wbr>Name</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="messenger.messengeruser.html#fromjsonvalue" class="tsd-kind-icon">fromJSONValue</a></li>
 							</ul>
 						</section>
@@ -125,19 +126,19 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Messenger<wbr>User<span class="tsd-signature-symbol">(</span>pageId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, psid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="messenger.messengeruser.html" class="tsd-signature-type" data-tsd-kind="Class">MessengerUser</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Messenger<wbr>User<span class="tsd-signature-symbol">(</span>pageId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, psid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="messenger.messengeruser.html" class="tsd-signature-type" data-tsd-kind="Class">MessengerUser</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/messenger/src/user.ts#L19">packages/messenger/src/user.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/messenger/src/user.ts#L21">packages/messenger/src/user.ts:21</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>pageId: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<h5>pageId: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
 									<h5>psid: <span class="tsd-signature-type">string</span></h5>
@@ -153,10 +154,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="pageid" class="tsd-anchor"></a>
 					<h3>page<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">page<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<div class="tsd-signature tsd-kind-icon">page<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/messenger/src/user.ts#L18">packages/messenger/src/user.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/messenger/src/user.ts#L20">packages/messenger/src/user.ts:20</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -165,9 +166,9 @@
 					<h3>platform</h3>
 					<div class="tsd-signature tsd-kind-icon">platform<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;messenger&quot;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/core_types.machinatuser.html">MachinatUser</a>.<a href="../interfaces/core_types.machinatuser.html#platform">platform</a></p>
+						<p>Implementation of <a href="../interfaces/core.machinatuser.html">MachinatUser</a>.<a href="../interfaces/core.machinatuser.html#platform">platform</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/messenger/src/user.ts#L17">packages/messenger/src/user.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/messenger/src/user.ts#L19">packages/messenger/src/user.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -177,7 +178,17 @@
 					<div class="tsd-signature tsd-kind-icon">psid<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/messenger/src/user.ts#L19">packages/messenger/src/user.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/messenger/src/user.ts#L21">packages/messenger/src/user.ts:21</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="typename" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> type<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">type<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &#x27;MessengerUser&#x27;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/messenger/src/user.ts#L12">packages/messenger/src/user.ts:12</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -194,7 +205,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/messenger/src/user.ts#L26">packages/messenger/src/user.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/messenger/src/user.ts#L28">packages/messenger/src/user.ts:28</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -210,9 +221,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/core_types.machinatuser.html">MachinatUser</a>.<a href="../interfaces/core_types.machinatuser.html#uid">uid</a></p>
+								<p>Implementation of <a href="../interfaces/core.machinatuser.html">MachinatUser</a>.<a href="../interfaces/core.machinatuser.html#uid">uid</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/messenger/src/user.ts#L30">packages/messenger/src/user.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/messenger/src/user.ts#L32">packages/messenger/src/user.ts:32</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -231,9 +242,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/core_base_marshaler.marshallable.html">Marshallable</a>.<a href="../interfaces/core_base_marshaler.marshallable.html#tojsonvalue">toJSONValue</a></p>
+								<p>Implementation of <a href="../interfaces/core_base_marshaler.marshallableinstance.html">MarshallableInstance</a>.<a href="../interfaces/core_base_marshaler.marshallableinstance.html#tojsonvalue">toJSONValue</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/messenger/src/user.ts#L34">packages/messenger/src/user.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/messenger/src/user.ts#L36">packages/messenger/src/user.ts:36</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">MessengerUserValue</span></h4>
@@ -241,7 +252,7 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="typename" class="tsd-anchor"></a>
+					<a name="typename-1" class="tsd-anchor"></a>
 					<h3>type<wbr>Name</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">type<wbr>Name<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
@@ -249,9 +260,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/core_base_marshaler.marshallable.html">Marshallable</a>.<a href="../interfaces/core_base_marshaler.marshallable.html#typename">typeName</a></p>
+								<p>Implementation of <a href="../interfaces/core_base_marshaler.marshallableinstance.html">MarshallableInstance</a>.<a href="../interfaces/core_base_marshaler.marshallableinstance.html#typename">typeName</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/messenger/src/user.ts#L39">packages/messenger/src/user.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/messenger/src/user.ts#L42">packages/messenger/src/user.ts:42</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -268,7 +279,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/04fa1ca/packages/messenger/src/user.ts#L12">packages/messenger/src/user.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/7c4d15c/packages/messenger/src/user.ts#L14">packages/messenger/src/user.ts:14</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -296,6 +307,9 @@
 						<a href="../modules/core.html">core</a>
 					</li>
 					<li class=" tsd-kind-module">
+						<a href="../modules/create_app.html">create-<wbr>app</a>
+					</li>
+					<li class=" tsd-kind-module">
 						<a href="../modules/dialogflow.html">dialogflow</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -318,9 +332,6 @@
 							</li>
 							<li class=" tsd-kind-module">
 								<a href="../modules/messenger_components.html">messenger/components</a>
-							</li>
-							<li class=" tsd-kind-module">
-								<a href="../modules/messenger_types.html">messenger/types</a>
 							</li>
 							<li class=" tsd-kind-module">
 								<a href="../modules/messenger_webview.html">messenger/webview</a>
@@ -352,18 +363,6 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="messenger.messengerbot.html" class="tsd-kind-icon">Messenger<wbr>Bot</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="messenger.messengerchat.html" class="tsd-kind-icon">Messenger<wbr>Chat</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="messenger.messengerprofiler.html" class="tsd-kind-icon">Messenger<wbr>Profiler</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="messenger.messengerreceiver.html" class="tsd-kind-icon">Messenger<wbr>Receiver</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-module">
@@ -381,6 +380,9 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="messenger.messengeruser.html#psid" class="tsd-kind-icon">psid</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="messenger.messengeruser.html#typename" class="tsd-kind-icon">type<wbr>Name</a>
+							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="messenger.messengeruser.html#id" class="tsd-kind-icon">id</a>
 							</li>
@@ -391,7 +393,7 @@
 								<a href="messenger.messengeruser.html#tojsonvalue" class="tsd-kind-icon">toJSONValue</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="messenger.messengeruser.html#typename" class="tsd-kind-icon">type<wbr>Name</a>
+								<a href="messenger.messengeruser.html#typename-1" class="tsd-kind-icon">type<wbr>Name</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 								<a href="messenger.messengeruser.html#fromjsonvalue" class="tsd-kind-icon">fromJSONValue</a>
@@ -400,18 +402,6 @@
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/messenger.html#api_path" class="tsd-kind-icon">API_<wbr>PATH</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/messenger.html#attachment_asset_tag" class="tsd-kind-icon">ATTACHMENT_<wbr>ASSET_<wbr>TAG</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/messenger.html#attachment_data" class="tsd-kind-icon">ATTACHMENT_<wbr>DATA</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="../modules/messenger.html#attachment_info" class="tsd-kind-icon">ATTACHMENT_<wbr>INFO</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
@@ -422,6 +412,14 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
+				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
@@ -429,12 +427,11 @@
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
-				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
-				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
-				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
 			</ul>
 		</div>
