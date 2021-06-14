@@ -75,7 +75,120 @@
 								<li class="tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter"><a href="../classes/webview_client.default.html" class="tsd-kind-icon">default</a></li>
 							</ul>
 						</section>
+						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter"><a href="webview_client.html#clienteventcontext" class="tsd-kind-icon">Client<wbr>Event<wbr>Context</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter"><a href="webview_client.html#eventcontextofclient" class="tsd-kind-icon">Event<wbr>Context<wbr>OfClient</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="webview_client.html#useeventreducer" class="tsd-kind-icon">use<wbr>Event<wbr>Reducer</a></li>
+							</ul>
+						</section>
 					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="clienteventcontext" class="tsd-anchor"></a>
+					<h3>Client<wbr>Event<wbr>Context</h3>
+					<div class="tsd-signature tsd-kind-icon">Client<wbr>Event<wbr>Context&lt;Authorizer, Value&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Authorizer</span><span class="tsd-signature-symbol"> extends </span><a href="webview.html#anyclientauthorizer" class="tsd-signature-type" data-tsd-kind="Type alias">AnyClientAuthorizer</a><span class="tsd-signature-symbol"> ? </span><span class="tsd-signature-symbol">{ </span>auth<span class="tsd-signature-symbol">: </span><a href="auth.html#contextofauthorizer" class="tsd-signature-type" data-tsd-kind="Type alias">ContextOfAuthorizer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Authorizer</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>authorizer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Authorizer</span><span class="tsd-signature-symbol">; </span>event<span class="tsd-signature-symbol">: </span><a href="webview.html#webviewevent" class="tsd-signature-type" data-tsd-kind="Type alias">WebviewEvent</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">, </span><a href="auth.html#userofauthorizer" class="tsd-signature-type" data-tsd-kind="Type alias">UserOfAuthorizer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Authorizer</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>platform<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Authorizer</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">&quot;platform&quot;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> : </span><span class="tsd-signature-type">never</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/99c9ee6/packages/webview/src/client/types.ts#L5">packages/webview/src/client/types.ts:5</a></li>
+						</ul>
+					</aside>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>Authorizer<span class="tsd-signature-symbol">: </span><a href="webview.html#anyclientauthorizer" class="tsd-signature-type" data-tsd-kind="Type alias">AnyClientAuthorizer</a></h4>
+						</li>
+						<li>
+							<h4>Value<span class="tsd-signature-symbol">: </span><a href="websocket.html#eventvalue" class="tsd-signature-type" data-tsd-kind="Type alias">EventValue</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="eventcontextofclient" class="tsd-anchor"></a>
+					<h3>Event<wbr>Context<wbr>OfClient</h3>
+					<div class="tsd-signature tsd-kind-icon">Event<wbr>Context<wbr>OfClient&lt;Client&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Client</span><span class="tsd-signature-symbol"> extends </span><a href="../classes/webview_client.default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">infer </span> Authorizer<span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">infer </span> Value<span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> ? </span><a href="webview_client.html#clienteventcontext" class="tsd-signature-type" data-tsd-kind="Type alias">ClientEventContext</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Authorizer</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Value</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> : </span><span class="tsd-signature-type">never</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/99c9ee6/packages/webview/src/client/types.ts#L17">packages/webview/src/client/types.ts:17</a></li>
+						</ul>
+					</aside>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>Client<span class="tsd-signature-symbol">: </span><a href="../classes/webview_client.default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><a href="webview.html#anyclientauthorizer" class="tsd-signature-type" data-tsd-kind="Type alias">AnyClientAuthorizer</a><span class="tsd-signature-symbol">, </span><a href="websocket.html#eventvalue" class="tsd-signature-type" data-tsd-kind="Type alias">EventValue</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="useeventreducer" class="tsd-anchor"></a>
+					<h3>use<wbr>Event<wbr>Reducer</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">use<wbr>Event<wbr>Reducer&lt;T, Client&gt;<span class="tsd-signature-symbol">(</span>client<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Client</span>, reducer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, context<span class="tsd-signature-symbol">: </span><a href="webview_client.html#eventcontextofclient" class="tsd-signature-type" data-tsd-kind="Type alias">EventContextOfClient</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Client</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span>, initialValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/99c9ee6/packages/webview/src/client/useEventReducer.ts#L6">packages/webview/src/client/useEventReducer.ts:6</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+								<li>
+									<h4>Client<span class="tsd-signature-symbol">: </span><a href="../classes/webview_client.default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><a href="webview.html#anyclientauthorizer" class="tsd-signature-type" data-tsd-kind="Type alias">AnyClientAuthorizer</a><span class="tsd-signature-symbol">, </span><a href="websocket.html#eventvalue" class="tsd-signature-type" data-tsd-kind="Type alias">EventValue</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Client</span><span class="tsd-signature-symbol">&gt;</span> = <a href="../classes/webview_client.default.html" class="tsd-signature-type" data-tsd-kind="Class">default</a><span class="tsd-signature-symbol">&lt;</span><a href="webview.html#anyclientauthorizer" class="tsd-signature-type" data-tsd-kind="Type alias">AnyClientAuthorizer</a><span class="tsd-signature-symbol">, </span><a href="websocket.html#eventvalue" class="tsd-signature-type" data-tsd-kind="Type alias">EventValue</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>client: <span class="tsd-signature-type">Client</span></h5>
+								</li>
+								<li>
+									<h5>reducer: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, context<span class="tsd-signature-symbol">: </span><a href="webview_client.html#eventcontextofclient" class="tsd-signature-type" data-tsd-kind="Type alias">EventContextOfClient</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Client</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, context<span class="tsd-signature-symbol">: </span><a href="webview_client.html#eventcontextofclient" class="tsd-signature-type" data-tsd-kind="Type alias">EventContextOfClient</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Client</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>value: <span class="tsd-signature-type">T</span></h5>
+														</li>
+														<li>
+															<h5>context: <a href="webview_client.html#eventcontextofclient" class="tsd-signature-type" data-tsd-kind="Type alias">EventContextOfClient</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Client</span><span class="tsd-signature-symbol">&gt;</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>initialValue: <span class="tsd-signature-type">T</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -147,6 +260,15 @@
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="../classes/webview_client.default.html" class="tsd-kind-icon">default</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="webview_client.html#clienteventcontext" class="tsd-kind-icon">Client<wbr>Event<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="webview_client.html#eventcontextofclient" class="tsd-kind-icon">Event<wbr>Context<wbr>OfClient</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="webview_client.html#useeventreducer" class="tsd-kind-icon">use<wbr>Event<wbr>Reducer</a>
 					</li>
 				</ul>
 			</nav>
