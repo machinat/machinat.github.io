@@ -136,7 +136,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/auth.serverauthorizer.html">ServerAuthorizer</a>.<a href="../interfaces/auth.serverauthorizer.html#platform">platform</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/machinat/machinat/blob/f1af8f6/packages/webview/src/noneAuthorizer/server.ts#L14">packages/webview/src/noneAuthorizer/server.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/2a43b83/packages/webview/src/noneAuthorizer/server.ts#L15">packages/webview/src/noneAuthorizer/server.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -152,10 +152,17 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/auth.serverauthorizer.html">ServerAuthorizer</a>.<a href="../interfaces/auth.serverauthorizer.html#checkauthcontext">checkAuthContext</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/f1af8f6/packages/webview/src/noneAuthorizer/server.ts#L42">packages/webview/src/noneAuthorizer/server.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/2a43b83/packages/webview/src/noneAuthorizer/server.ts#L43">packages/webview/src/noneAuthorizer/server.ts:43</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Called before the authorization finish, you can make some simple non-async
+									final checks. Return the auth context supplement if success.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -175,10 +182,19 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/auth.serverauthorizer.html">ServerAuthorizer</a>.<a href="../interfaces/auth.serverauthorizer.html#delegateauthrequest">delegateAuthRequest</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/f1af8f6/packages/webview/src/noneAuthorizer/server.ts#L16">packages/webview/src/noneAuthorizer/server.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/2a43b83/packages/webview/src/noneAuthorizer/server.ts#L17">packages/webview/src/noneAuthorizer/server.ts:17</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Handle requests required in the auth flow, for the most of time, it&#39;s used
+										for redirecting user-agent from/to other identity provider (IdP). Any
+										request match route &quot;<auth_server_entry>/{platform}/*&quot; would be delegated
+									to this method, and it&#39;s responsible to close the the server response.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -201,10 +217,18 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/auth.serverauthorizer.html">ServerAuthorizer</a>.<a href="../interfaces/auth.serverauthorizer.html#verifycredential">verifyCredential</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/f1af8f6/packages/webview/src/noneAuthorizer/server.ts#L24">packages/webview/src/noneAuthorizer/server.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/2a43b83/packages/webview/src/noneAuthorizer/server.ts#L25">packages/webview/src/noneAuthorizer/server.ts:25</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Called when sign requests from client side are received, controller would
+										sign in the user by issuing a token to client and signing a signature
+									wihtin cookie if it resolve success.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -224,10 +248,17 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/auth.serverauthorizer.html">ServerAuthorizer</a>.<a href="../interfaces/auth.serverauthorizer.html#verifyrefreshment">verifyRefreshment</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/f1af8f6/packages/webview/src/noneAuthorizer/server.ts#L33">packages/webview/src/noneAuthorizer/server.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/2a43b83/packages/webview/src/noneAuthorizer/server.ts#L34">packages/webview/src/noneAuthorizer/server.ts:34</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Called when refresh requests from client side are received, controller
+									would refresh token and signature if it resolve success.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>

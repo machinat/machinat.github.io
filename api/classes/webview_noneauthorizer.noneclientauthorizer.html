@@ -135,7 +135,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/auth.clientauthorizer.html">ClientAuthorizer</a>.<a href="../interfaces/auth.clientauthorizer.html#platform">platform</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/machinat/machinat/blob/f1af8f6/packages/webview/src/noneAuthorizer/client.ts#L17">packages/webview/src/noneAuthorizer/client.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/2a43b83/packages/webview/src/noneAuthorizer/client.ts#L18">packages/webview/src/noneAuthorizer/client.ts:18</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -151,10 +151,17 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/auth.clientauthorizer.html">ClientAuthorizer</a>.<a href="../interfaces/auth.clientauthorizer.html#checkauthcontext">checkAuthContext</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/f1af8f6/packages/webview/src/noneAuthorizer/client.ts#L50">packages/webview/src/noneAuthorizer/client.ts:50</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/2a43b83/packages/webview/src/noneAuthorizer/client.ts#L51">packages/webview/src/noneAuthorizer/client.ts:51</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Called before the authorization finish, you can make some simple non-async
+									final checks. Return the auth context supplement if success.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -174,10 +181,18 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/auth.clientauthorizer.html">ClientAuthorizer</a>.<a href="../interfaces/auth.clientauthorizer.html#fetchcredential">fetchCredential</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/f1af8f6/packages/webview/src/noneAuthorizer/client.ts#L21">packages/webview/src/noneAuthorizer/client.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/2a43b83/packages/webview/src/noneAuthorizer/client.ts#L22">packages/webview/src/noneAuthorizer/client.ts:22</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Start work flow from client side and resolve the auth data which would be
+										then verified and signed at server side. If the auth flow reuqire
+									redirecting user-agent, just set the location and pend resolving.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/auth.html#authorizercredentialresult" class="tsd-signature-type" data-tsd-kind="Type alias">AuthorizerCredentialResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">NoneAuthData</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -191,10 +206,18 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/auth.clientauthorizer.html">ClientAuthorizer</a>.<a href="../interfaces/auth.clientauthorizer.html#init">init</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/f1af8f6/packages/webview/src/noneAuthorizer/client.ts#L19">packages/webview/src/noneAuthorizer/client.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/2a43b83/packages/webview/src/noneAuthorizer/client.ts#L20">packages/webview/src/noneAuthorizer/client.ts:20</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Initiate necessary libary like IdP SDK to start authentication works, this
+										method is expected to be called before the view of app start rendering and
+									would only be called once.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>

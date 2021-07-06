@@ -133,7 +133,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/f1af8f6/packages/messenger/src/webview/server.ts#L54">packages/messenger/src/webview/server.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/2a43b83/packages/messenger/src/webview/server.ts#L53">packages/messenger/src/webview/server.ts:53</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -155,7 +155,7 @@
 					<div class="tsd-signature tsd-kind-icon">app<wbr>Secret<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/machinat/machinat/blob/f1af8f6/packages/messenger/src/webview/server.ts#L53">packages/messenger/src/webview/server.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/2a43b83/packages/messenger/src/webview/server.ts#L52">packages/messenger/src/webview/server.ts:52</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -165,7 +165,7 @@
 					<div class="tsd-signature tsd-kind-icon">issue<wbr>Time<wbr>Limit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/machinat/machinat/blob/f1af8f6/packages/messenger/src/webview/server.ts#L54">packages/messenger/src/webview/server.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/2a43b83/packages/messenger/src/webview/server.ts#L53">packages/messenger/src/webview/server.ts:53</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -175,7 +175,7 @@
 					<div class="tsd-signature tsd-kind-icon">page<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/machinat/machinat/blob/f1af8f6/packages/messenger/src/webview/server.ts#L52">packages/messenger/src/webview/server.ts:52</a></li>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/2a43b83/packages/messenger/src/webview/server.ts#L51">packages/messenger/src/webview/server.ts:51</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -186,7 +186,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/auth.serverauthorizer.html">ServerAuthorizer</a>.<a href="../interfaces/auth.serverauthorizer.html#platform">platform</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/machinat/machinat/blob/f1af8f6/packages/messenger/src/webview/server.ts#L51">packages/messenger/src/webview/server.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/2a43b83/packages/messenger/src/webview/server.ts#L50">packages/messenger/src/webview/server.ts:50</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -202,10 +202,17 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/auth.serverauthorizer.html">ServerAuthorizer</a>.<a href="../interfaces/auth.serverauthorizer.html#checkauthcontext">checkAuthContext</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/f1af8f6/packages/messenger/src/webview/server.ts#L158">packages/messenger/src/webview/server.ts:158</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/2a43b83/packages/messenger/src/webview/server.ts#L157">packages/messenger/src/webview/server.ts:157</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Called before the authorization finish, you can make some simple non-async
+									final checks. Return the auth context supplement if success.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -225,10 +232,19 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/auth.serverauthorizer.html">ServerAuthorizer</a>.<a href="../interfaces/auth.serverauthorizer.html#delegateauthrequest">delegateAuthRequest</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/f1af8f6/packages/messenger/src/webview/server.ts#L72">packages/messenger/src/webview/server.ts:72</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/2a43b83/packages/messenger/src/webview/server.ts#L71">packages/messenger/src/webview/server.ts:71</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Handle requests required in the auth flow, for the most of time, it&#39;s used
+										for redirecting user-agent from/to other identity provider (IdP). Any
+										request match route &quot;<auth_server_entry>/{platform}/*&quot; would be delegated
+									to this method, and it&#39;s responsible to close the the server response.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -251,10 +267,18 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/auth.serverauthorizer.html">ServerAuthorizer</a>.<a href="../interfaces/auth.serverauthorizer.html#verifycredential">verifyCredential</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/f1af8f6/packages/messenger/src/webview/server.ts#L80">packages/messenger/src/webview/server.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/2a43b83/packages/messenger/src/webview/server.ts#L79">packages/messenger/src/webview/server.ts:79</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Called when sign requests from client side are received, controller would
+										sign in the user by issuing a token to client and signing a signature
+									wihtin cookie if it resolve success.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -274,10 +298,17 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/auth.serverauthorizer.html">ServerAuthorizer</a>.<a href="../interfaces/auth.serverauthorizer.html#verifyrefreshment">verifyRefreshment</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/f1af8f6/packages/messenger/src/webview/server.ts#L148">packages/messenger/src/webview/server.ts:148</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/2a43b83/packages/messenger/src/webview/server.ts#L147">packages/messenger/src/webview/server.ts:147</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Called when refresh requests from client side are received, controller
+									would refresh token and signature if it resolve success.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>

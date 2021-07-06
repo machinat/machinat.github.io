@@ -97,9 +97,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="auth.authcontroller.html#apipath" class="tsd-kind-icon">api<wbr>Path</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="auth.authcontroller.html#authorizers" class="tsd-kind-icon">authorizers</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="auth.authcontroller.html#cookieoperator" class="tsd-kind-icon">cookie<wbr>Operator</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="auth.authcontroller.html#entrypath" class="tsd-kind-icon">entry<wbr>Path</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="auth.authcontroller.html#secret" class="tsd-kind-icon">secret</a></li>
 							</ul>
 						</section>
@@ -125,13 +125,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/f1af8f6/packages/auth/src/controller.ts#L79">packages/auth/src/controller.ts:79</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/2a43b83/packages/auth/src/controller.ts#L79">packages/auth/src/controller.ts:79</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>Authorizer<span class="tsd-signature-symbol">: </span><a href="../interfaces/auth.serverauthorizer.html" class="tsd-signature-type" data-tsd-kind="Interface">ServerAuthorizer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><a href="../modules/auth.html#authcontext" class="tsd-signature-type" data-tsd-kind="Type alias">AuthContext</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/core.machinatuser.html" class="tsd-signature-type" data-tsd-kind="Interface">MachinatUser</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/core.machinatchannel.html" class="tsd-signature-type" data-tsd-kind="Interface">MachinatChannel</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Authorizer</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									<h4>Authorizer<span class="tsd-signature-symbol">: </span><a href="../interfaces/auth.serverauthorizer.html" class="tsd-signature-type" data-tsd-kind="Interface">ServerAuthorizer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">, </span><a href="../modules/auth.html#anyauthcontext" class="tsd-signature-type" data-tsd-kind="Type alias">AnyAuthContext</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Authorizer</span><span class="tsd-signature-symbol">&gt;</span></h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -151,12 +151,22 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="apipath" class="tsd-anchor"></a>
+					<h3>api<wbr>Path</h3>
+					<div class="tsd-signature tsd-kind-icon">api<wbr>Path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/2a43b83/packages/auth/src/controller.ts#L78">packages/auth/src/controller.ts:78</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="authorizers" class="tsd-anchor"></a>
 					<h3>authorizers</h3>
 					<div class="tsd-signature tsd-kind-icon">authorizers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Authorizer</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/machinat/machinat/blob/f1af8f6/packages/auth/src/controller.ts#L76">packages/auth/src/controller.ts:76</a></li>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/2a43b83/packages/auth/src/controller.ts#L76">packages/auth/src/controller.ts:76</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -166,17 +176,7 @@
 					<div class="tsd-signature tsd-kind-icon">cookie<wbr>Operator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CookieOperator</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/machinat/machinat/blob/f1af8f6/packages/auth/src/controller.ts#L79">packages/auth/src/controller.ts:79</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="entrypath" class="tsd-anchor"></a>
-					<h3>entry<wbr>Path</h3>
-					<div class="tsd-signature tsd-kind-icon">entry<wbr>Path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/machinat/machinat/blob/f1af8f6/packages/auth/src/controller.ts#L78">packages/auth/src/controller.ts:78</a></li>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/2a43b83/packages/auth/src/controller.ts#L79">packages/auth/src/controller.ts:79</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -186,7 +186,7 @@
 					<div class="tsd-signature tsd-kind-icon">secret<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/machinat/machinat/blob/f1af8f6/packages/auth/src/controller.ts#L77">packages/auth/src/controller.ts:77</a></li>
+							<li>Defined in <a href="https://github.com/machinat/machinat/blob/2a43b83/packages/auth/src/controller.ts#L77">packages/auth/src/controller.ts:77</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -203,7 +203,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/f1af8f6/packages/auth/src/controller.ts#L148">packages/auth/src/controller.ts:148</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/2a43b83/packages/auth/src/controller.ts#L148">packages/auth/src/controller.ts:148</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -232,7 +232,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/machinat/machinat/blob/f1af8f6/packages/auth/src/controller.ts#L227">packages/auth/src/controller.ts:227</a></li>
+									<li>Defined in <a href="https://github.com/machinat/machinat/blob/2a43b83/packages/auth/src/controller.ts#L227">packages/auth/src/controller.ts:227</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -322,13 +322,13 @@
 								<a href="auth.authcontroller.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="auth.authcontroller.html#apipath" class="tsd-kind-icon">api<wbr>Path</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="auth.authcontroller.html#authorizers" class="tsd-kind-icon">authorizers</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="auth.authcontroller.html#cookieoperator" class="tsd-kind-icon">cookie<wbr>Operator</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="auth.authcontroller.html#entrypath" class="tsd-kind-icon">entry<wbr>Path</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="auth.authcontroller.html#secret" class="tsd-kind-icon">secret</a>
