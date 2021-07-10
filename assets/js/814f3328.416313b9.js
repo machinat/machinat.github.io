@@ -1,0 +1,1 @@
+(self.webpackChunkmachinat_github_io=self.webpackChunkmachinat_github_io||[]).push([[535],{6353:function(t){"use strict";t.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Introducing Machinat","permalink":"/blog/hola"}]}')}}]);
