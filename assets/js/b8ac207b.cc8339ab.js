@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmachinat_github_io=self.webpackChunkmachinat_github_io||[]).push([[607],{7312:function(t){t.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Sociable App: \u5c6c\u65bc\u793e\u7fa4\u6642\u4ee3\u7684 App","permalink":"/blog/zh-tw/sociable-app-\u5c6c\u65bc\u793e\u7fa4\u6642\u4ee3\u7684-app"}]}')}}]);

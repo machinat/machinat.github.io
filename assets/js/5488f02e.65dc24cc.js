@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmachinat_github_io=self.webpackChunkmachinat_github_io||[]).push([[6222],{8273:function(t){t.exports=JSON.parse('{"permalink":"/blog/zh-tw/tags/framework","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

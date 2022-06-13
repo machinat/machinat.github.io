@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmachinat_github_io=self.webpackChunkmachinat_github_io||[]).push([[618],{997:function(a){a.exports=JSON.parse('{"label":"sociable app","permalink":"/blog/tags/sociable-app","allTagsPath":"/blog/tags","count":1}')}}]);

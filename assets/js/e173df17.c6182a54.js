@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmachinat_github_io=self.webpackChunkmachinat_github_io||[]).push([[5416],{3016:function(t){t.exports=JSON.parse('{"permalink":"/blog/zh-tw","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

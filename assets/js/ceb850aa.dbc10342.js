@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmachinat_github_io=self.webpackChunkmachinat_github_io||[]).push([[7580],{7965:function(t){t.exports=JSON.parse('{"permalink":"/blog/zh-tw/tags/sociable-app","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
